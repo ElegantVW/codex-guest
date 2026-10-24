@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated": "2026-10-24T16:50:35Z",
-  "pack_sha": "81237b90be7b55fd3635cf65bc4d2af7a0da874c0326bcc5e3560082d7e84f41",
+  "generated": "2026-10-24T16:58:35Z",
+  "pack_sha": "3cd4aa50d6d5f023391a0f68def0cf180b776dbc6787db45f387a7318f965839",
   "creatures": [
     {
       "name": "kindling",
@@ -221,7 +221,7 @@
     "NOW.md",
     "NEXT.md"
   ],
-  "exe_version": "0.1.2",
-  "exe_url": "https://github.com/ElegantVW/codex-guest/releases/download/v0.1.2/codex-windows-x86_64.exe",
-  "exe_sha256": "39871036a967addb6bea49ef220cc30baed8567af9d880bf1683f3f11a55dae1"
+  "exe_version": "0.1.3",
+  "exe_url": "https://github.com/ElegantVW/codex-guest/releases/download/v0.1.3/codex-windows-x86_64.exe",
+  "exe_sha256": "f11ba1b9cb76f485f53759de2465631b452e1cda11abe508ee2ccc641f55f7ba"
 }

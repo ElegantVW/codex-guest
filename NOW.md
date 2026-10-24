@@ -2,7 +2,7 @@
 
 Work in flight on the public shelf. Honest, not a pitch.
 
-- **Codex** — a window you can download. No source trees on your machine. This page is what it opens on. Open it (or press Pull) and it asks this studio whether a newer window is out.
+- **Codex** — a window you can download. No source trees on your machine. This page is what it opens on. Open it (or press Pull) and it asks this studio whether a newer window is out. Grove’s Codex card reads the same feed.
 - **Pixie** — local familiar in Rust. Offline tools, pink TUI, no cloud account.
 - **faeOS** — the pink house around it: prompt, dock, kit. Terminal first.
 - **Siren** — music in the terminal, local files and speakers. Looking for people who will actually press play on their own box.
