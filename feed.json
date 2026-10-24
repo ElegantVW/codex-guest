@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated": "2026-10-24T16:32:55Z",
-  "pack_sha": "e5840fa7e5e124eafc002d67a57dde99340410a177550351904202858e09d294",
+  "generated": "2026-10-24T16:50:35Z",
+  "pack_sha": "81237b90be7b55fd3635cf65bc4d2af7a0da874c0326bcc5e3560082d7e84f41",
   "creatures": [
     {
       "name": "kindling",
@@ -103,9 +103,9 @@
       "name": "grove",
       "blurb": "the front door",
       "url": "https://github.com/ElegantVW/grove",
-      "commit": "grove: take the PDF from the resume box",
-      "date": "2026-10-24T17:23:22+01:00",
-      "sha": "aef1e0b"
+      "commit": "grove: Codex card — window checks this studio",
+      "date": "2026-10-24T17:33:23+01:00",
+      "sha": "6aef236"
     }
   ],
   "files": [
