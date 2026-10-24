@@ -4,12 +4,12 @@
     <title>ElegantVW — lately</title>
     <link>https://github.com/ElegantVW/codex-guest</link>
     <description>What uncle has been building. Public Grove shelf.</description>
-    <lastBuildDate>2026-10-24T15:54:39Z</lastBuildDate>
+    <lastBuildDate>2026-10-24T16:25:49Z</lastBuildDate>
     <item>
       <title>Now — studio window</title>
       <link>https://github.com/ElegantVW/codex-guest</link>
-      <guid isPermaLink="false">codex-now-05113f26fe62a29ae3b77d73ec0417e69bd3c7f3493959850009691cda561bf7</guid>
-      <pubDate>2026-10-24T15:54:39Z</pubDate>
+      <guid isPermaLink="false">codex-now-a34762f1b892bf7a34279d59040fd62e26c1daf203fdf52299ed1ae8923080a5</guid>
+      <pubDate>2026-10-24T16:25:49Z</pubDate>
       <description>Work in flight. Open the exe, tab Now.</description>
     </item>
     <item>
@@ -97,10 +97,10 @@
       <description>pink house, offline</description>
     </item>
     <item>
-      <title>grove: grove: Pixie card is the Rust familiar, build.sh install</title>
+      <title>grove: grove: take the PDF from the resume box</title>
       <link>https://github.com/ElegantVW/grove</link>
-      <guid isPermaLink="false">https://github.com/ElegantVW/grove/commit/a24461b</guid>
-      <pubDate>2026-10-16T16:01:30+01:00</pubDate>
+      <guid isPermaLink="false">https://github.com/ElegantVW/grove/commit/aef1e0b</guid>
+      <pubDate>2026-10-24T17:23:22+01:00</pubDate>
       <description>the front door</description>
     </item>
   </channel>

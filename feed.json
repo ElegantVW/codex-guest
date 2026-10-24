@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated": "2026-10-24T15:54:39Z",
-  "pack_sha": "05113f26fe62a29ae3b77d73ec0417e69bd3c7f3493959850009691cda561bf7",
+  "generated": "2026-10-24T16:25:49Z",
+  "pack_sha": "a34762f1b892bf7a34279d59040fd62e26c1daf203fdf52299ed1ae8923080a5",
   "creatures": [
     {
       "name": "kindling",
@@ -103,9 +103,9 @@
       "name": "grove",
       "blurb": "the front door",
       "url": "https://github.com/ElegantVW/grove",
-      "commit": "grove: Pixie card is the Rust familiar, build.sh install",
-      "date": "2026-10-16T16:01:30+01:00",
-      "sha": "a24461b"
+      "commit": "grove: take the PDF from the resume box",
+      "date": "2026-10-24T17:23:22+01:00",
+      "sha": "aef1e0b"
     }
   ],
   "files": [
