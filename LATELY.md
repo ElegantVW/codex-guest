@@ -6,7 +6,7 @@ RSS: https://raw.githubusercontent.com/ElegantVW/codex-guest/main/feed.xml
 
 Codex is a studio window: download the exe. Now / Lately / Next. RSS if you only want headlines.
 
-- **grove** — grove: Codex card — window checks this studio (2026-10-24) · [the front door](https://github.com/ElegantVW/grove)
+- **grove** — grove: Codex card drinks the studio feed (2026-10-24) · [the front door](https://github.com/ElegantVW/grove)
 - **pixie** — pixie: prompt wrap by columns so a new line does not stomp the first (2026-10-16) · [helper, no cloud](https://github.com/ElegantVW/pixie)
 - **magpie** — fix format! escape in bullet prompt; checkable-bullets rule now compiles (2026-10-11) · [sourced manuals](https://github.com/ElegantVW/magpie)
 - **kur** — Pond ripple: async speak, listening spinner, one-ripple-at-a-time (2026-10-11) · [haiku only](https://github.com/ElegantVW/kur)

@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated": "2026-10-24T16:58:35Z",
-  "pack_sha": "3cd4aa50d6d5f023391a0f68def0cf180b776dbc6787db45f387a7318f965839",
+  "generated": "2026-10-24T17:14:23Z",
+  "pack_sha": "774473d2e47f3ba62af48bbaf64e6789214fda9dffac2f51dc5b7bedfebe556a",
   "creatures": [
     {
       "name": "kindling",
@@ -103,9 +103,9 @@
       "name": "grove",
       "blurb": "the front door",
       "url": "https://github.com/ElegantVW/grove",
-      "commit": "grove: Codex card — window checks this studio",
-      "date": "2026-10-24T17:33:23+01:00",
-      "sha": "6aef236"
+      "commit": "grove: Codex card drinks the studio feed",
+      "date": "2026-10-24T17:59:03+01:00",
+      "sha": "10366c5"
     }
   ],
   "files": [
