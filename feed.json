@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated": "2026-10-24T15:27:19Z",
-  "pack_sha": "18dcd8f90394954f0df05910379c6b4956d6d203017024f0d1b7a20723c61d6d",
+  "generated": "2026-10-24T15:40:25Z",
+  "pack_sha": "4bf0adbd1feda3aaf762ceb13743b350510b237552ec0386cf2b473f1d64a5a6",
   "creatures": [
     {
       "name": "kindling",
@@ -23,9 +23,9 @@
       "name": "pixie",
       "blurb": "helper, no cloud",
       "url": "https://github.com/ElegantVW/pixie",
-      "commit": "pixie: prompt wrap by columns so a new line does not stomp the first",
-      "date": "2026-10-16T16:01:30+01:00",
-      "sha": "6a35f1b"
+      "commit": "pixie: lockfile follows 0.2.2",
+      "date": "2026-10-16T16:14:05+01:00",
+      "sha": "2a11c6a"
     },
     {
       "name": "magpie",
@@ -95,17 +95,17 @@
       "name": "faeOS",
       "blurb": "pink house, offline",
       "url": "https://github.com/ElegantVW/faeOS",
-      "commit": "Homepage: front door is Grove",
-      "date": "2026-10-11T04:55:53+01:00",
-      "sha": "19ed66d"
+      "commit": "fae-wm dock: starship frame, status strip, sigil cells",
+      "date": "2026-10-17T19:26:54+01:00",
+      "sha": "5289138"
     },
     {
       "name": "grove",
       "blurb": "the front door",
       "url": "https://github.com/ElegantVW/grove",
-      "commit": "grove: Pixie card is the Rust familiar, build.sh install",
-      "date": "2026-10-16T16:01:30+01:00",
-      "sha": "a24461b"
+      "commit": "grove: Codex card — windows exe + RSS",
+      "date": "2026-10-24T16:35:19+01:00",
+      "sha": "39cb2e7"
     }
   ],
   "files": [
