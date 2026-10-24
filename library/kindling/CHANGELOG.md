@@ -1,0 +1,294 @@
+# fae-kernel changelog
+
+## v0.0.3 us3r (2026-10-11)
+
+- Repo renamed fae-kernel to kindling (crate + serial strings stay fae-kernel). Cargo 0.0.3.
+
+
+## public-g61 (2026-10-10)
+
+- Public copy names house light G61: README (GitHub landing), Grove fire card, faeOS map. Kindling boots QEMU and iron. Linux ELF and `grant` stay later.
+
+## pane-g61 (2026-10-10)
+
+- Iron G60 opened the pane then `kindling bunny` / `the spark went out`: rustc memset of the TUI buffers jumped through a discarded GOT at address 8. Gleam ELF keeps `.got` in the load segment; pane copies bytes by hand and names memset/memcpy/memmove itself. Glass bunny paints CR2 (`kindling: bunny 0x8`). ingle-leaf / ingle-leaf-cast / efi-grow fail if the pane smoors after open, and require `the pane is shut`. Plant EFI + CAIRN — KINDLOG stays held (`even`). KINDLING `85C7-AA81` only.
+
+## pane-g60 (2026-10-10)
+
+- Tiny TUI `pane` after the fire: flush form-feed owns the left glass; Grove and flame sit on the right (GOP 2×, VGA at column 64). `ingle` kindles `pane` after `bud` (miss quiet). `q` shuts the pane; `r` recasts from it. `make below` ingle-leaf greps `the pane is open`; efi-grow sends an extra `q`. Plant EFI + CAIRN — KINDLOG stays held (`even`). KINDLING `85C7-AA81` only.
+
+## grow-g59 (2026-10-10)
+
+- FAT32 `stow` grows or shrinks a present root file to the asked measure (extra clusters allocated and zeroed; a shorter file frees the tail). Cairn leaves stay exact measure. Spark `bud` inks FAT `page` 10→600 after the fire; already inked it says `kept`. A dark volume is quiet. `make below` += efi-grow. Plant EFI + CAIRN + wax `page` — KINDLOG stays held (`even`). KINDLING `85C7-AA81` only.
+
+## floor-g58 (2026-10-10)
+
+- Iron `trap 14` after the fire: gleam sat at 1 GiB, which is the EFI well cap and where the IdeaPad GOP can live, so the user walk had no U/S. Floor moves to 1.25 GiB (`0x50000000`). Spawn clones GOP gigs instead of sharing them. Guest traps on the glass wear critters (`bunny` is `#PF`); serial still `kindling: trap N`. ingle-leaf also at 2 GiB RAM. Plant EFI + CAIRN — KINDLOG stays held (`even`). KINDLING `85C7-AA81` only.
+
+## paved-g57 (2026-10-10)
+
+- After the fire is lit, `ingle` kindles `gleam` (flush on the glass). A miss is quiet so ingle-only images still greet. Packed on ingle-leaf, efi-ingle, and the paved cairn. Cup/spark runs search the pool by physical address so an ELF at 1 GiB can smoor and a raw spark can still kindle. Plant EFI + CAIRN — KINDLOG stays held (`even`). KINDLING `85C7-AA81` only.
+
+## flush-g56 (2026-10-10)
+
+- House call 7 `flush` is the glass a TUI owns. Empty presents (`0` if VGA/GOP live, `-ENODEV` if dark). A buffer paints the glass only; serial stays the transcript. `grant` stays `-EAGAIN`. rustc spark: `the rust is lit` / `the glass is ours` / `gleam exit 0`. Plant EFI + CAIRN — KINDLOG stays held (`even`). KINDLING `85C7-AA81` only.
+
+## gleam-g55 (2026-10-10)
+
+- Kindling loads a Gleam ELF64 `ET_EXEC` (our headers, house calls, not a Linux ABI). Raw nasm sparks stay 64 KiB and identity-mapped. The rustc spark lives at 1 GiB so it never sits on Kindling's cup at 4 MiB. Proof: `kindling: gleam ok` / `the rust is lit` / `gleam exit 0`. `make below` += gleam-elf. Plant EFI + CAIRN — KINDLOG stays held (`even`). KINDLING `85C7-AA81` only. `grant` / `flush` stay shut.
+
+## quiet-g54 (2026-10-10)
+
+- Host opened both KINDLOG seals; twins match; `even` is live with salt and verifier. AES wraps the roster. The word is a SHA-256 inside that plaintext. Iron `the ink will not hold` after `speak the word` was the greeting WRITE (`hand`), after the word already matched. `ink_hand` miss stays quiet. `the ink will not hold` only when the seals fail to land. Plant EFI only — KINDLOG stays held (`even`). KINDLING `85C7-AA81` only.
+
+## recast-g53 (2026-10-10)
+
+- Iron `r` did nothing on first boot (name showing) and on the next hall: only `leaf` and ingle-after-leaf knocked `cast`. Greeting keys did not echo, so `r` was swallowed until Enter. Hall `r` redrew the list. `ingle` recasts at the name; `keeper` recasts from the hall menu. `make below` += ingle-hall-cast. Plant CAIRN only — KINDLOG stays held (`even`). KINDLING `85C7-AA81` only.
+
+## hall-g52 (2026-10-10)
+
+- Iron choose of `even` painted `the ink will not hold` / `kindling: gleam exit 1`. KINDLOG already held the seals; LBA 69 was `even`. `ink_hand` WRITE landed, the reread missed, and keeper treated `-EIO` as death. `hand` is a greeting: after enlist `save` or a matching choose, a miss there still returns 0. Iron enlist proof always `--wax` so the next boot is an empty hall. KINDLING `85C7-AA81` only.
+
+## recast-g51 (2026-10-10)
+
+- Iron hall is lit (`even`). `q` already smoors (`exit` / `hlt`); the panel stays on. House call 15 `cast` paints `the fire is recast`, pulses the 8042 (`0xFE`), then PCI reset (`0xCF9`). `ingle` and `leaf` knock it on `r`. `make below` += ingle-cast, ingle-leaf-cast, efi-cast. Plant EFI only — KINDLOG stays held.
+
+## ink-g50 (2026-10-10)
+
+- Iron G49 hung ~90s after the second word, then `the ink will not hold` / `the book is split` / `kindling: gleam exit 1`. LBA 65 was a USB `USBC` TEST UNIT READY packet, not a seal: after a WRITE the kernel sent TUR while the Databar still wanted 512 data bytes, and that 31-byte CBW was programmed to flash. Quiet path: WRITE, wait 300 ms, READ (1 s). No FUA, no SYNCHRONIZE CACHE, no class reset until the WRITE is retired. `roll` retries a dead glean three times. KINDLING `85C7-AA81` only.
+
+## ink-g49 (2026-10-10)
+
+- Iron G48 still painted `the ink will not hold` / `the book is split` / `kindling: gleam exit 1`. G48 EFI was what booted; KINDLOG LBA 65 was a full 512-byte seal and 66–69 stayed wax. SYNCHRONIZE CACHE (10) stalled the Databar while NAND was still programming, so the reread never came back and `roll` gleaned `-EIO`. That command is gone. After WRITE the kernel waits (10 ms, then 100, then 200) and retries with FUA. A failed bulk transfer stops and resets both MSC pipes (xHCI + Bulk-Only) so the hall can still glean. KINDLING `85C7-AA81` only.
+
+## ink-g48 (2026-10-10)
+
+- Iron G47 painted `the log is lit`, then `the ink will not hold` / `the book is split` / `kindling: gleam exit 1`. WRITE(10) of KINDLOG LBA 65 landed; the immediate reread missed, so `stow` stopped before the twin and `roll` gleaned `-EIO`. `commit_prepared` now SYNCHRONIZE CACHE (10) after WRITE, settles, then READ(10) compares; five tries; TUR recovers the pipe so a miss stays in the hall. KINDLING `85C7-AA81` only.
+
+## kindlog-g47 (2026-10-10)
+
+- Iron G46 painted `the log is dark` twice then `the ink will not hold`: `live()` re-read the super at enlist and required MBR `secs` to equal the super's `n`. A named slice whose super already checked out at probe stays lit — the cache is the super's own size, not the MBR count. Glass paints sector count on each store line (`6c 64 1984 kindlog`) and `the log is lit` after `fat`. KINDLOG is classified before FAT (start LBA order). WRITE still uses that cached slice, KINDLING `85C7-AA81` only.
+
+## kindlog-g46 (2026-10-10)
+
+- Iron G45 still painted `the ink will not hold`. The paved CAIRN packs wax `hands` / `twin` / `hand`, so `stow` found those leaves first and tried ATA — no KINDLOG write, FAT create never ran either. Book names skip the cairn when a KINDLOG slice is named. Live is the `KLOG` super itself (no FAT `volume_id()` helper). A named slice whose super does not check out paints `the log is dark` and does not fall through to FAT. WRITE(10) is still KINDLING `85C7-AA81` only.
+- Databar LBA 64–2047 was leftover reserved-area entropy. Two non-zero 716-byte sides would have split the hall the moment KINDLOG was live. `plant-kindlog` waxes `hands`/`twin`/`hand` unless a sealed book is already held. `read_sec` retries three times. MBR type `0x6c` still names `kindlog` after a stale first read. efi-keeper packs those wax leaves into CAIRN and still inks KINDLOG.
+
+## kindlog-g45 (2026-10-09)
+
+- The book leaves FAT. KINDLOG is a second MBR slice (`0x6c`, LBA 64, 1984 sectors on the Databar headroom) with superblock `KLOG`. `hands` / `twin` / `hand` sit at relative LBAs 1–2 / 3–4 / 5. `enlist` WRITE(10)+rereads only those sectors, KINDLING `85C7-AA81` only. FAT stays the ESP; leftover FAT book files do not split the hall.
+- efi-keeper plants the slice; serial `6c 64 kindlog`; after enlist the seals are on KINDLOG. `scripts/plant-kindlog.py` lays the same slot on a raw disk without shrinking FAT.
+
+## store-g44 (2026-10-09)
+
+- After `msc` the glass names the disk: table (`mbr` / `gpt` / `disk`), block size, LBA count, then each partition (`fat` / `kindlog` / `empty` / `other`) with type hex and start LBA. FAT stays the glean/stow arm. No writes. KINDLOG magic `KLOG` is recognized, not mounted.
+- efi-msc plants a type `0x83` dummy beside the FAT32; serial `83 4096 other`. The live Databar is not written.
+
+## lone-g43 (2026-10-09)
+
+- Iron G42 first boot painted `the ink will not hold` then `the book is split` and `gleam exit 1`: `stow` laid `hands` and missed `twin`, and `roll` treated a lone leaf as a split. A missing or wax side is an empty book. `save` waxes both leaves when either stow misses. WRITE(10)+reread tries three times with TUR in between. efi-keeper plants an `EFI` directory + `LEAF` + wax `hand` (Databar-like root) and a one-sided `hands` still enlists. Two live seals that disagree still split.
+
+## ink-g42 (2026-10-07)
+
+- `stow` on a live KINDLING FAT32 volume creates a missing or empty root file of the asked measure (allocate clusters, LFN + 8.3, both FAT copies, WRITE(10)+reread). A present file of another non-zero size paints `the leaf is the wrong measure`. FAT16 still re-inks only. First boot can carve `hands` / `twin` / `hand` with no host wax. Ink miss stays in the hall; split still dies on the next `roll`.
+- efi-keeper plants only `keeper`; after enlist the volume has 716/716/32. Wax 716/32 still enlists. The live Databar is not written.
+
+## hall-g41c (2026-10-07)
+
+- Iron looped `who keeps this fire` / `speak the word` / `speak it again`: vfat stores `hands` as 8.3 `HANDS` with no LFN, and glean/stow compared exact case, so enlist missed the leaf and restarted the name. LFN is exact and wins (`leaf` is the spark, not the 8.3 `LEAF` page). 8.3-only aliases fold (`hands` finds `HANDS`). Stow miss paints `the ink will not hold`.
+- Letters and backspace landed twice the way Enter used to (USB HID + 8042). A key is one glyph until it is up. 8042 is muted once a USB boot keyboard is found.
+
+## enter-g41b (2026-10-07)
+
+- One Enter is one line. Iron typed the word, then saw `speak it again` and immediately `speak the word` — the confirm line ate a second newline from USB HID + 8042. `read` ignores 8042 scancodes while a USB boot keyboard is live, and holds further `\n` until Enter is up.
+
+## hall-answers-g41 (2026-10-07)
+
+- The hall answers. After `enlist` the glass writes `the name is cut` and `the word sleeps in the twin`. After `choose`, `this fire knows you`. After `dismiss`, `that name is given back`. Confirm mismatch stays in keeper: `the second word is a stranger` (no kernel call). Last hand still stays. ingle-keeper / efi-keeper greps those lines. Fresh start on KINDLING: wax `hand` / `hands` / `twin`.
+
+## book-g39 (2026-10-07)
+
+- House calls `roll` 11 / `enlist` 12 / `choose` 13 / `dismiss` 14. The kernel keeps a roster of 8 slots in leaves `hands` and `twin`, exact measure 716. Each is AES-256-GCM under a different wrapping key (`SHA-256("kindling-hands"||vol_id)` vs twin). Ciphertexts of the same book do not compare equal. User word is a verifier `SHA-256(salt||word||vol_id||name)`, not reversible. RDRAND salts and nonces; AES-NI required — a miss paints `the book stays shut`. Unseal both, byte-compare; mismatch paints `the book is split` and refuses the hall.
+- First boot (empty book, or G37 wax book with an inked `hand`): name (echoed), word (stars), word again, `enlist`. `ingle` always kindles `keeper` first; last word 0 greets `hand` and lights the fire.
+
+## hall-g40 (2026-10-07)
+
+- Non-empty book: keeper is the hall (`1 gil`, `n` a new keeper, `d` dismiss). Digit + word `choose`s and enters the paved house. Last keeper cannot be dismissed (`the last hand stays`). Wrong word paints `the word fails` and stays. ingle-keeper / efi-keeper: create `gil` with word `tinder`, hall choose, two keepers, dismiss, split twin. QEMU CPU `qemu64,+aes,+rdrand`. The live Databar is not written.
+
+## echo-g38 (2026-10-07)
+
+- `keeper` writes each printable name key as it is read, so the glass shows the word while it is typed. Backspace drops the last glyph. Glass `putc` treats `0x08` as cursor-left and erase.
+- ingle-keeper / efi-keeper type `gix`, backspace, `l` — transcript echoes, stored name is `gil`.
+
+## keeper-g37 (2026-10-07)
+
+- Spark `keeper` reads a name and stows it as the 32-byte leaf `hand` (wax is 32 zeros). Prompt `who keeps this fire`. `ingle` gleans that leaf: empty kindles `keeper` once; inked, it greets the name. A miss of `hand` or `keeper` is quiet. Exact measure — creating files waits.
+- BIOS ingle-keeper and QEMU efi-keeper two-boot the same disk: first boot types `gil`, second boot greets `gil` and never asks again. Paved `make image` packs `keeper` + wax `hand`. The live Databar is not written.
+
+## stow-volume-g36 (2026-10-07)
+
+- `stow` still takes the cairn first (kind 0). When that name is missing (or there is no cairn) and MSC saw a FAT volume, it re-inks the volume's **root** by the same Gleam name. Exact measure. WRITE(10) each sector, READ(10) compare. The volume serial must be KINDLING `85C7-AA81`. A different volume is `-EPERM`. DMA dest stays the MSC page. Creating or growing files waits.
+- QEMU efi-stow plants LFN `slate` on that serial. Cairn has `tale` + `first-leaf`. First boot `stowed` / `ink holds`; second boot of the same usb-storage image `kept` / `ink holds`. The live Databar is not written.
+
+## spawn-volume-g35 (2026-10-07)
+
+- `spawn` still takes the cairn first (kind 1). When that name is missing (or there is no cairn) and MSC saw a FAT volume, it gathers from the volume's **root** by the same Gleam name. Cap 64 KiB, exact size, raw `nasm -f bin`. Empty or oversize is `-EPERM`. A truncated spark is a lie. DMA dest stays the MSC page.
+- QEMU efi-msc plants LFN `leaf` beside `LEAF` (8.3 `LEAF~1`). Cairn has only `ingle`, so the round trip is the volume: Enter → fire → **q** → `the light remains` → **q** → `gleam exit 0`.
+
+## ingle-light-g34 (2026-10-07)
+
+- No-Light `exit` paints serial **and** the glass `kindling: gleam exit N`, then `hlt`. Iron **q** is a visible halt (IdeaPad has no COM1).
+- `ingle` is the desktop: after `the fire is lit` it `spawn("leaf")` once. A miss is quiet. A last word ≥ 0 writes `the light remains`. Then it reads until **q** and leaves. The kernel does not grow a Light for `ingle` itself.
+- Paved `make image` packs `ingle` + `leaf` + `LEAF`. `make below` += ingle-leaf (Enter → fire → `the volume speaks` → **q** → `the light remains` → **q** → `gleam exit 0`). Ingle-only EFI tests send **q** after the fire.
+
+## leaf-g33 (2026-10-06)
+
+- Spark `leaf` gleans Gleam name `LEAF`, writes the page, reads until `q`, `exit`s. BIOS packs the page in the cairn; efi-leaf packs only the spark and gleans from the FAT root. Serial `kindling: leaf ok` / `the volume speaks` / `gleam exit 0`. Paved `ingle` stays the greeter. `make below` += leaf + efi-leaf.
+
+## glean-volume-g32 (2026-10-06)
+
+- `glean` still takes the cairn first. When that name is missing (or there is no cairn) and MSC saw a FAT volume, it gathers from the volume's **root** by the same Gleam name (1–64, no `/`). FAT is the medium: 8.3 pad-strip and LFN ASCII fold into the house name. Cap 1 MiB. Read only. A bad cairn xor stays `-EIO`. After `fat`, the kernel gleans `LEAF` on the same path and speaks the page; a miss is quiet (iron Databar has no `LEAF`). QEMU efi-msc plants a real FAT32 at LBA 2048 with `LEAF` / `the volume speaks`. No WRITE(10).
+
+## spark-went-out-g31 (2026-10-06)
+
+- Guest `#UD` / `#PF` / `#GP` (CS.RPL 3) print `kindling: trap N` and `the spark went out` on serial and the glass. With a Light, `drop_spark` and `spawn` returns `-EIO`. No resume at the fault RIP. Ring-0 traps and `#DF` stay fatal (`kindling: trap N` + `hlt`). Error-code vectors keep a uniform frame.
+- Proof spark `splanc` (Irish *splanc*) is `ud2`. Ember kindles it when packed; `stayed` is a lie. Serial: `kindling: trap 6` / `the spark went out` / `kindling: gleam exit 1`. `make below` += splanc. G30 spawn (wick, no splanc) still `stayed` / `gleam exit 0`.
+
+## light-g30 (2026-10-06)
+
+- `spawn` kindles one named spark and returns its last word when that spark `exit`s. One kernel Light holds the house frame; the child reuses the well-cup; `drop_spark` pools the cloned tables, spark pages, guard, and cup. Nested spawn is `-EAGAIN`. No pid, no wait, no table.
+- Test spark `ember` (OE *æmerge*) kindles `wick`, writes `stayed`, `exit`s with wick's word. `spawn-test` lights ember. Serial: `kindling: spawn ok` / `the cup is its own` / `stayed` / `kindling: gleam exit 0`. Paved `ingle` still `hlt`s (no Light).
+
+## usb-msc-g29h (2026-10-06)
+
+- Iron G29g printed `no fat` after `msc`. READ(10) of 512 B lived; LBA 0 is the Databar MBR (`0x55AA`, type `0x0c` at start 2048). `probe_fat` reads LBA 0, then each FAT-type MBR partition, then GPT entries if the protective type is `0xEE`. Superfloppy LBA 0 still counts. QEMU efi-msc is now MBR + FAT32 at 2048, matching iron.
+
+## usb-msc-g29g (2026-10-06)
+
+- Iron G29f printed `msc`: BOT and READ CAPACITY lived on the Databar. READ(10) now takes LBA 0 (512 B). Glass `fat` when the boot sector is 0x55AA plus `FAT32`/`FAT1`; `no fat` if the read misses or the sector is not FAT. QEMU efi-msc plants a FAT32 signature on the usb-storage image. No WRITE. Stow stays ATA; KINDLOG waits.
+
+## usb-msc-g29f (2026-10-06)
+
+- Iron G29e printed `no desc`: reset and Address Device lived, GET_DESCRIPTOR did not. EP0 control TDs now match xHCI 1.0 / Linux: TRT IN=3 OUT=2, Setup/Data/Status are separate TDs (no Chain), first TRB cycle held until the rest are written, `mfence` before the doorbell. Average TRB Length 8 on EP0. A failed control resets EP0 and sets the dequeue pointer; GET_DESCRIPTOR retries, then Evaluate 64/8 if PSI was a lie. QEMU hid the swapped TRT and the Chain bit.
+
+## usb-msc-g29e (2026-10-06)
+
+- Iron G29d printed `no rst`. PED (PORTSC bit 1) is RW1CS: writing 1 *disables* the port. `port_neutral` had copied Linux RO but included PED; after reset the ack wrote PED=1 and killed Enable. QEMU ignores that write. Neutral now matches Linux (CCS/OC/speed/PP/PLS only). USB2 waits for PR to self-clear; USB3 uses WPR. Never write 1 to PED unless we mean to disable.
+
+## usb-msc-g29d (2026-10-06)
+
+- Iron G29c was a blink at `well` then still `no dev` (CCS, no GET_DESCRIPTOR). PORTSC writes now match Linux (preserve RO/RWS, do not write-1 all change bits with PR). USBLEGSUP waits up to 1 s for BIOS to drop the semaphore. Glass splits the miss: `no rst` / `no addr` / `no desc` / `no bot` / `no cap`. GET_DESCRIPTOR 18 still runs if the 8-byte probe stalls.
+
+## usb-msc-g29c (2026-10-06)
+
+- Iron G29b printed `no dev` after a minute at `well`. CCS was seen, GET_DESCRIPTOR never was: failed PORTSC resets retried with 4 million uncached MMIO polls, and USBLEGSUP/PP/HCRST used the same spin. Waits are milliseconds on the G28 clock (20–100 ms). One reset try per port; a second scan 100 ms later catches a late stick. Dead BAR (`0xFFFFFFFF`, caplen>0x80) is refused. PCI CF8 walks buses 0..=15. CAS gets a warm reset. EP0 starts at 8 for FS/LS, then Evaluate. IMAN IE at runtime 0x20. Glass still `no ccs` / `no dev` / `no bot` / `no cap` / `msc`.
+
+## usb-msc-g29b (2026-10-06)
+
+- Iron G29 printed `no msc` (and `no usb`): bringup never kept a host. QEMU hid it — devices CCS immediately. After HCRST the IdeaPad camera/BT can CCS first; `power_ports` returned on that and the side-port Databar (USB2 HS, BOT 8/6/50) was still reconnecting. Settle 150 ms on the G28 clock, then rescan (100 ms × 4) so a late CCS is seen. USB3 ports warm-reset when !PED. 10 ms reset recovery before Address/GET_DESCRIPTOR. Glass names the miss: `no ccs` / `no dev` / `no bot` / `no cap` / `msc`. Empty Thunderbolt xHCI bails after one extra settle.
+
+## usb-msc-g29 (2026-10-06)
+
+- xHCI now walks every root port and one hub hop for BOT mass storage (class 8 / subclass 6 / proto `0x50`) as well as a HID boot keyboard. HID no longer stops the scan. Bulk IN/OUT, CBW/CSW, TEST UNIT READY retries, READ CAPACITY(10). Glass `msc` / `no msc` after `tick`. HID interrupt completions stay off the BOT `xfer_seen` flag so ingle still hears Enter. `make below` += efi-msc (`usb-kbd` on `xhci.0` port 1, `usb-storage` on port 2). Stow is still ATA; FAT/KINDLOG waits.
+
+## clock-g28 (2026-10-06)
+
+- House `sleep`/`time` were path-dependent: PIT ms on BIOS, a no-op + raw `rdtsc` on EFI. After the well, Kindling maps HPET (`0xFED00000` in the `0xFEC00000` 2M UC leaf beside the LAPIC), else polls the PIT, calibrates TSC, and `time` is milliseconds on every path that arms. Glass `tick` / `no tick`. EFI proves `sleep 50` with `kindling: efi slept`. `make below` += efi-sleep. BIOS `init slept` stays.
+
+## usb-hub-g27b (2026-10-06)
+
+- Iron G27 printed `no usb` then `ingle`. QEMU hid it: `qemu-xhci` has no PPC and the kbd sits on a root port. Intel wants PP on every port before CCS, Enable Slot type from Supported Protocol (xECP **Next** is a DWORD offset from this cap, not the BAR), and the IdeaPad keys often hang behind one USB2 hub. Glass now says `xhci` then `usb kbd` or `no usb` (`no xhci` if PCI missed). `map_uc` may replace a present WB 2M leaf. HID match is class 3 proto 1. OVMF + hub can park the PE at the top of a 256M bowl; the bump stays at 4 MiB when after-image has no cup. `make below` += efi-usb-hub (`usb-hub` on `xhci.0` port 1, `usb-kbd` on `1.1`).
+
+## usb-hid-g27 (2026-10-06)
+
+- Iron G26 showed `ingle` waiting; the IdeaPad keyboard is USB. House `read` now polls xHCI as well as the 8042. PCI CF8 finds class `0x0C0330`, maps the BAR UC, takes USBLEGSUP, halt/reset/run, addresses a HID boot keyboard, `SET_PROTOCOL` 0. Reports become ASCII on the same queue. Serial `kindling: xhci 0xBAR` and `kindling: usb kbd` (or `no usb`). `make below` += efi-usb (`qemu-xhci` + `usb-kbd`; must print `usb kbd` before `sendkey`). 8042 `efi-ingle` stays.
+
+## glass-g26 (2026-10-05)
+
+- Stick was current (md5 match); iron still Grove + quiet cursor. EFI well identity-mapped only 0..1 GiB, then `mov cr3` — Insyde PE/GOP above that blinds the panel, QEMU OVMF stays low and serial-only gates stay green. `prepare_well` now maps the loaded image (WB) and GOP (UC) into the new tables before CR3. If the PE ends past the well cap, the bump drinks 4 MiB (or after a low image), never past `ram_end`. `show()` writes `kindling` on the log row (pre-EBS GOP already works on iron). After CR3 the glass says `well`. ConOut prints `pe` / `gop` hex. Serial `kindling: gop 0xADDR 0xPITCH` after the well. `make below` += efi-glass (QEMU `xp` of the log row) and stick (`cmp` KINDLING when the pen is plugged; skip if the pen is out or sudo is missing). Audit 2G bowl waits 8s.
+
+## ingle-wait-g25c (2026-10-05)
+
+- Iron showed a quiet cursor under Grove: cairn planted and ingle wrote, then `read` `hlt`'d. EFI never programs the PIT, and laptop IRQ1 often dies after ExitBootServices, so that `hlt` never wakes. `read` now polls the 8042 data port and `pause`s unless the PIT is armed. GOP log sits at Grove's margin with a parchment bar cursor. After the well the glass says `kindling`, and `no kbd` if the 8042 probe refused.
+
+## efi-cairn-g25b (2026-10-05)
+
+- Iron (IdeaPad Insyde) showed Grove twice and nothing else: GOP covers ConOut breadcrumbs, and the cairn never planted. LoadedImage.device() often has no SimpleFileSystem (USB child does). Walk: GetProtocol on the device, LocateDevicePath on that path, LocateDevicePath on LoadedImageDevicePath (the HD node lives on the file path), then every SimpleFileSystem handle until `CAIRN` opens. Nested `EFI/BOOT/CAIRN` open. AllocateAddress 1MB may refuse 512 KiB; shrink to 64/16/4 KiB, else AnyPages + copy after EBS when the slot is free and not the running image. Miss writes `no ingle` on the glass (no COM1). `make below` EFI (no CAIRN) greps that line.
+
+## ingle-g25 (2026-10-05)
+
+- Paved boots carry `ingle`. `make image` packs `--spark ingle` and writes `spark/cairn.bin` (`--cairn-out`). After the well, the happy kernel calls `light_ingle`: missing cairn or spark is a quiet halt, never a FAIL line.
+- EFI reads `\EFI\BOOT\CAIRN` with GetProtocol SimpleFileSystem (not exclusive), AllocateAddress `0x100000`, plants KMAP scratch at `0x8400` after ExitBootServices. Missing file is honest — Grove still paints. ConOut prints `cairn` when the blob landed. Kindling's GDT (user segments + TSS) and 8259 remap (0x20/0x28) now run on the EFI path so CPL3 `ingle` can iretq and IRQ1 lands on the house vector. Asm-called `house_entry` / ticks are `extern "sysv64"` — the UEFI target's `extern "C"` is win64, which was turning `write` into `grant` and `read` into `exit`.
+- `make below` += `efi-ingle` (OVMF + sendkey). KINDLING stick takes `BOOTX64.EFI` + `EFI/BOOT/CAIRN`.
+
+## ingle-g24 (2026-10-05)
+
+- House `read` (call 10) on fd 0: PS/2 8042, IRQ1, scancode set 1 → ASCII. No controller is `-EAGAIN`. Wrong fd is `-EPERM`. Blocks until a byte when live.
+- Spark `ingle` writes its name, reads a line, writes `the fire is lit`, `exit 0`. `make below` += `ingle` (G23/G24). `make test` runs it via monitor `sendkey ret`.
+
+## iron-grove-g22 (2026-10-05)
+
+- EFI ConOut prints the Grove sigil + title *before* any GOP open. IdeaPad 3 15ITL6 (Insyde) froze after `cerne-efi` inside GOP; the panel is the only transcript. Breadcrumbs `image` / `gop` / `exit`. GOP paint still happens before `ExitBootServices` when the open returns.
+- `serial_put` gives up if COM1 LSR never ready (no UART on the laptop). GOP show is glyphs only — no full-framebuffer UC fill.
+- `make below` EFI greps `Grove` / `image` / `exit`. `make test` runs the throwaway VMs (happy..spawn) plus grove. Stick update is the iron verdict.
+
+## grove-g21 (2026-10-05)
+
+- Glass: after the well, Kindling paints the Grove glyph (Violet) and the title `Grove` (Parchment). BIOS writes VGA `B8000` under the firmware flame; EFI maps GOP UC (same rite as the LAPIC window) and blits the 8×16. Kindling flame is first on GOP (firmware never ran there).
+- `write` fd 1/2 also paints the glass. Serial ceremony unchanged. `flush` still `-EAGAIN`.
+- `make below` += `grove` (G21). Suite-as-guest stays later (no Linux ABI, no keyboard).
+
+## spawn-g20 (2026-10-05)
+
+- `spawn` (house call 5) is real: named cairn spark, private pool copy (64 KiB law), own 64 KiB cup, own CR3 (clone of the kernel map, U/S only on spark+cup, kernel 2M supervisor, guard not-present). v0 replaces the light. ELF later.
+- Second spark `wick` tells `second-leaf` (`the cup is its own`) then `exit(0)`. Feature `spawn-test` + `spawn-bin`. House-test: null spawn is `-EPERM`; a missing name is `-ENODEV` or `-ENOENT`.
+- Tale/init stay on the shared all-U/S map. `grant`/`flush` still `-EAGAIN`. `make below` += `spawn` (G20).
+
+## well-3g + font (2026-10-05)
+
+- Firmware maps 2 MiB pages through 3 GiB (`PDPT[0..2]` at `0x3000` / `0xD000` / `0xE000`). `PDPT[3]` stays empty for the LAPIC window. 1025M and 2G used to `#PF` (`trap 14`) because one PD only covers 1 GiB.
+- `probe_cap` walks live CR3 present-bits before the write/read; unmapped RAM stops the walk. A `#PF` during probe is a fail, not a well size.
+- VGA 8×16 into plane 2 (`scripts/mkfont.py` → `fw/font8x16.bin`). Readback of `'*'` sets FMAP `0x8020`; miss prints `cerne-fw: no font`. Happy serial unchanged.
+- `make audit` += 1025M (`well 1024 MiB`) + 2G (`well 2048 MiB`). `make below` += `font`.
+- Doc truth: house light G15–G19 was on; Linux ELF / `spawn` still shut at that sitting. BOOT EFI spark line, syscalls header, SECURITY transcript, cairn `STOW` comment.
+
+## stow-g2b (2026-10-01)
+
+- Ink holds on iron: kernel ATA PIO read/write, `stow` call 9 (exact re-ink; sectors + LBA0 rewritten and ATA-verified, `-EIO` on mismatch). `tale` v2 stows the slate on boot1 (`stowed`), reads it `kept` on boot2. Sparks run from private pool copies (buf-in-cairn, twice learned). `make below` += `stow` (G19) green.
+
+## tale-g2a (2026-10-01)
+
+- The cairn (house voice throughout): leaves + sparks on disk (`docs/CAIRN.md`), `glean` call 8, `stow` 9 shut. Loader lays the cairn at `0x100000`; KMAP 0–16 untouched. First spark `tale` tells `first-leaf` at CPL3. `make below` += `tale` (G18) green.
+
+## test-vm + timer-cpl3 (2026-09-30)
+
+- `scripts/test-vm.sh`: throwaway QEMU VM (`happy|house|ring3|reclaim`, logs in `test-logs/`), 4× PASS.
+- Timer from CPL3 proven: `init` sleeps 50 ms → `init slept` → `exit(0)` (6× IRQ0 in `-d int`); ring3/house gates require it. Virtual-wire via kernel `timer::wire()` (LAPIC EN + LINT0, readback FAIL 9–12); PIT/mask health FAIL 7/8; ISR-shared ticks volatile; `init`/`wire` split (window exists post-well only).
+
+## reclaim-g1 (2026-09-30)
+
+- G1 realms + reclaim: 4 KiB frame pool (LIFO, capped), realm guard + 64 KiB cup + PT split (2M → 4K, guard not-present), canary, drop restores + replays same frames. `kindling-reclaim.img` prints `kindling: reclaim ok`. `make below` += `reclaim` (G17) green. Per-realm CR3s wait on spawn (G4).
+
+## ring3-init (2026-09-30)
+
+- First Gleam light at CPL3: `gleam_init` (`write`/`yield`/`exit`) via `int 0xE0`; `kindling-ring3.img` prints `kindling: init ok` + `gleam exit 0`. GDT UCODE/UDATA + TSS (RSP0/IST1), pages U/S, PIT 100 Hz, #DF on IST1. `make below` += `ring3` (G16) green.
+
+## house-v0 (2026-09-30)
+
+- Gleam-only house calls first: `int 0xE0` gate, v0 `yield`/`exit`/`write(fd 1-2)`/`sleep`-stub/`time` + shut `spawn`/`grant`/`flush` (`-EAGAIN`); unknown → `-ENOSYS`. `docs/HOUSECALLS.md`.
+- `kindling-house.img` prints `kindling: house ok`; happy path silent. `make below` += `house` (G15) green.
+
+## sweep-phase1 (2026-09-30)
+
+- Full sweep, phase 1 held: `audit ok` + `below ok` re-verified after fixes.
+- Truth fixes: `docs/BOOT.md` spark line → `kindling: still only a spark`; dedup cup warning in `docs/FIRMWARE.md`; `.gitignore` covers `ld/*.bin` + `kindling*.img`.
+- Lints green: `cargo fmt --check` clean; `cargo clippy -D warnings` clean (fw, limine, efi). `COM1 + 0` → `COM1`, collapsed nested `if let`.
+- Upgrade audit: `uefi 0.35.0` / `limine 0.5.0` pinned — `uefi 0.41` deferred (EFI ABI churn, phase-1 freeze).
+- Real disk chain (2026-09-28, uncommitted): firmware → `ld/cerne-ld` off disk → kernel, no `-device loader`; G13/G14 green.
+
+## phase1-green (2026-09-24)
+
+- Kindling phase 1 green: own page tables, bump well, cup-stack, CMOS probe,
+  GDT/IDT, FMAP, trap names, ROM checksum. `make below` + `below-ten` pass.
+- Firmware + fused loader are ours; Limine/OVMF borrowed at build, not vendored.
+- Phase 2 (user ELF `write`/`exit`) shut. Syscall table all `missing` (ENOSYS).

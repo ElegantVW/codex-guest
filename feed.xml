@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>ElegantVW — lately</title>
+    <link>https://github.com/ElegantVW/codex-guest</link>
+    <description>What uncle has been building. Public Grove shelf.</description>
+    <lastBuildDate>2026-10-24T15:24:37Z</lastBuildDate>
+    <item>
+      <title>kindling: CHANGELOG: release entry</title>
+      <link>https://github.com/ElegantVW/kindling</link>
+      <guid isPermaLink="false">https://github.com/ElegantVW/kindling/commit/fe1ab23</guid>
+      <pubDate>2026-10-11T05:40:35+01:00</pubDate>
+      <description>first light</description>
+    </item>
+    <item>
+      <title>bulwark: CHANGELOG: release entry</title>
+      <link>https://github.com/ElegantVW/bulwark</link>
+      <guid isPermaLink="false">https://github.com/ElegantVW/bulwark/commit/97b6376</guid>
+      <pubDate>2026-10-11T05:40:51+01:00</pubDate>
+      <description>lock and guard</description>
+    </item>
+    <item>
+      <title>pixie: pixie: prompt wrap by columns so a new line does not stomp the first</title>
+      <link>https://github.com/ElegantVW/pixie</link>
+      <guid isPermaLink="false">https://github.com/ElegantVW/pixie/commit/6a35f1b</guid>
+      <pubDate>2026-10-16T16:01:30+01:00</pubDate>
+      <description>helper, no cloud</description>
+    </item>
+    <item>
+      <title>magpie: fix format! escape in bullet prompt; checkable-bullets rule now compiles</title>
+      <link>https://github.com/ElegantVW/magpie</link>
+      <guid isPermaLink="false">https://github.com/ElegantVW/magpie/commit/a64f2e8</guid>
+      <pubDate>2026-10-11T18:48:24+01:00</pubDate>
+      <description>sourced manuals</description>
+    </item>
+    <item>
+      <title>siren: feat: mixer speaker fader and house-wave mute</title>
+      <link>https://github.com/ElegantVW/siren</link>
+      <guid isPermaLink="false">https://github.com/ElegantVW/siren/commit/f51c1cf</guid>
+      <pubDate>2026-10-11T01:03:46+01:00</pubDate>
+      <description>plays your music</description>
+    </item>
+    <item>
+      <title>goblin: docs: name the v0.1.1 cut letter-pouch</title>
+      <link>https://github.com/ElegantVW/goblin</link>
+      <guid isPermaLink="false">https://github.com/ElegantVW/goblin/commit/8f3b512</guid>
+      <pubDate>2026-10-10T23:37:52+01:00</pubDate>
+      <description>private mail</description>
+    </item>
+    <item>
+      <title>fairy-lantern: README demo: headless run verification without screen (#2)</title>
+      <link>https://github.com/ElegantVW/fairy-lantern</link>
+      <guid isPermaLink="false">https://github.com/ElegantVW/fairy-lantern/commit/7940454</guid>
+      <pubDate>2026-10-10T16:56:33+01:00</pubDate>
+      <description>Game Boy Advance</description>
+    </item>
+    <item>
+      <title>mourama: CHANGELOG: release entry</title>
+      <link>https://github.com/ElegantVW/mourama</link>
+      <guid isPermaLink="false">https://github.com/ElegantVW/mourama/commit/f7de60c</guid>
+      <pubDate>2026-10-11T05:40:41+01:00</pubDate>
+      <description>hillfort game</description>
+    </item>
+    <item>
+      <title>kur: Pond ripple: async speak, listening spinner, one-ripple-at-a-time</title>
+      <link>https://github.com/ElegantVW/kur</link>
+      <guid isPermaLink="false">https://github.com/ElegantVW/kur/commit/d1798b8</guid>
+      <pubDate>2026-10-11T13:19:04+01:00</pubDate>
+      <description>haiku only</description>
+    </item>
+    <item>
+      <title>imp: CHANGELOG: release entry</title>
+      <link>https://github.com/ElegantVW/imp</link>
+      <guid isPermaLink="false">https://github.com/ElegantVW/imp/commit/62c486e</guid>
+      <pubDate>2026-10-11T05:40:46+01:00</pubDate>
+      <description>art from a wish</description>
+    </item>
+    <item>
+      <title>scroll: CHANGELOG: release entry</title>
+      <link>https://github.com/ElegantVW/scroll</link>
+      <guid isPermaLink="false">https://github.com/ElegantVW/scroll/commit/e3f0953</guid>
+      <pubDate>2026-10-11T05:40:58+01:00</pubDate>
+      <description>house book</description>
+    </item>
+    <item>
+      <title>faeOS: Homepage: front door is Grove</title>
+      <link>https://github.com/ElegantVW/faeOS</link>
+      <guid isPermaLink="false">https://github.com/ElegantVW/faeOS/commit/19ed66d</guid>
+      <pubDate>2026-10-11T04:55:53+01:00</pubDate>
+      <description>pink house, offline</description>
+    </item>
+    <item>
+      <title>grove: grove: Pixie card is the Rust familiar, build.sh install</title>
+      <link>https://github.com/ElegantVW/grove</link>
+      <guid isPermaLink="false">https://github.com/ElegantVW/grove/commit/a24461b</guid>
+      <pubDate>2026-10-16T16:01:30+01:00</pubDate>
+      <description>the front door</description>
+    </item>
+  </channel>
+</rss>
