@@ -4,8 +4,7 @@ What ElegantVW has been up to. Public shelf only.
 
 RSS: https://raw.githubusercontent.com/ElegantVW/codex-guest/main/feed.xml
 
-Codex now has a public window: download the exe, no source trees required.
-RSS: https://raw.githubusercontent.com/ElegantVW/codex-guest/main/feed.xml
+Public window is live: download the exe, or subscribe to the RSS. No source trees on your machine.
 
 - **pixie** — pixie: prompt wrap by columns so a new line does not stomp the first (2026-10-16) · [helper, no cloud](https://github.com/ElegantVW/pixie)
 - **grove** — grove: Pixie card is the Rust familiar, build.sh install (2026-10-16) · [the front door](https://github.com/ElegantVW/grove)
