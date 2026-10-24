@@ -4,7 +4,14 @@
     <title>ElegantVW — lately</title>
     <link>https://github.com/ElegantVW/codex-guest</link>
     <description>What uncle has been building. Public Grove shelf.</description>
-    <lastBuildDate>2026-10-24T15:40:25Z</lastBuildDate>
+    <lastBuildDate>2026-10-24T15:54:39Z</lastBuildDate>
+    <item>
+      <title>Now — studio window</title>
+      <link>https://github.com/ElegantVW/codex-guest</link>
+      <guid isPermaLink="false">codex-now-05113f26fe62a29ae3b77d73ec0417e69bd3c7f3493959850009691cda561bf7</guid>
+      <pubDate>2026-10-24T15:54:39Z</pubDate>
+      <description>Work in flight. Open the exe, tab Now.</description>
+    </item>
     <item>
       <title>kindling: CHANGELOG: release entry</title>
       <link>https://github.com/ElegantVW/kindling</link>
@@ -20,10 +27,10 @@
       <description>lock and guard</description>
     </item>
     <item>
-      <title>pixie: pixie: lockfile follows 0.2.2</title>
+      <title>pixie: pixie: prompt wrap by columns so a new line does not stomp the first</title>
       <link>https://github.com/ElegantVW/pixie</link>
-      <guid isPermaLink="false">https://github.com/ElegantVW/pixie/commit/2a11c6a</guid>
-      <pubDate>2026-10-16T16:14:05+01:00</pubDate>
+      <guid isPermaLink="false">https://github.com/ElegantVW/pixie/commit/6a35f1b</guid>
+      <pubDate>2026-10-16T16:01:30+01:00</pubDate>
       <description>helper, no cloud</description>
     </item>
     <item>
@@ -83,17 +90,17 @@
       <description>house book</description>
     </item>
     <item>
-      <title>faeOS: fae-wm dock: starship frame, status strip, sigil cells</title>
+      <title>faeOS: Homepage: front door is Grove</title>
       <link>https://github.com/ElegantVW/faeOS</link>
-      <guid isPermaLink="false">https://github.com/ElegantVW/faeOS/commit/5289138</guid>
-      <pubDate>2026-10-17T19:26:54+01:00</pubDate>
+      <guid isPermaLink="false">https://github.com/ElegantVW/faeOS/commit/19ed66d</guid>
+      <pubDate>2026-10-11T04:55:53+01:00</pubDate>
       <description>pink house, offline</description>
     </item>
     <item>
-      <title>grove: grove: Codex card — windows exe + RSS</title>
+      <title>grove: grove: Pixie card is the Rust familiar, build.sh install</title>
       <link>https://github.com/ElegantVW/grove</link>
-      <guid isPermaLink="false">https://github.com/ElegantVW/grove/commit/39cb2e7</guid>
-      <pubDate>2026-10-24T16:35:19+01:00</pubDate>
+      <guid isPermaLink="false">https://github.com/ElegantVW/grove/commit/a24461b</guid>
+      <pubDate>2026-10-16T16:01:30+01:00</pubDate>
       <description>the front door</description>
     </item>
   </channel>
