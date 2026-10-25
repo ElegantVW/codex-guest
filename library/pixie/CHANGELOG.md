@@ -1,5 +1,13 @@
 # Pixie changelog
 
+## v0.3.0 door, names, endless thread (2026-10-25)
+
+- Bare `pixie` opens Resume / New / Options after the splash. `--new` and `--resume [id]` skip the door.
+- Session names live in `<id>.meta.json`. Kur titles the first 10 user lines; `r` on the list is sticky and stops auto-retitling.
+- After a finished reply, if the 24k prompt window is ≥ 70% full, the 8B writes a `compact` recap. TUI keeps the full transcript. Tool-loop guard is 64 rounds per turn.
+- Options: model / backend / ctx (via menagerie set/backend/ensure), persona overlay, sparkle, verbose, default rune. Eye stays asleep. Imp is a GPU hop note.
+- llama.cpp stays the guest sampler. Menagerie shepherds it. No VL GGUF on this cut.
+
 ## v0.2.6 keep the thread (2026-10-25)
 
 - Bare `pixie` resumes the latest jsonl. `pixie --new` (`-n`) starts a blank session. C-s lists chats (enter load, n new).
