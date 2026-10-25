@@ -2,13 +2,14 @@
 
 **Role:** Local AI familiar with tools (files, shell, house spells), fully offline. `pixie` / `pixie "…"`; llama-server on `127.0.0.1:8080` via `menagerie`.
 
-**Status:** Rust engine (v0.3.0). Python `bin/pixie` retired. Menagerie / ask / imp stay Python in this pass.
+**Status:** Rust engine (v0.3.1). Python `bin/pixie` retired. Menagerie / ask / imp stay Python in this pass.
 
 ## Current
 
 - Engine: Rust ELF `~/.local/lib/faeos/pixie`, thin launcher `~/bin/pixie`. Build: `./build.sh install --house`.
 - Model: Huihui Qwen3-8B abliterated v2 Q4_K_M on this box (menagerie). Live mouth is GPU (`-ngl 99`), ctx **16384**. Native GGUF window is 40k.
-- Bare `pixie` opens a **door** after the splash: Resume (named list, `r` rename), New, Options. `pixie --new` / `-n` and `--resume [id]` skip the door. **C-s** still lists chats in-thread. `--chats` / `--chat` remain. Memory inject 6k, file 24k. Prompt history is a 24k-char window; after a finished reply at ≥ 70% she compact-recaps (jsonl `role: compact`) and keeps going. Tool-loop guard is 64 rounds per turn.
+- Bare `pixie` opens a **dashboard** after the splash: house star, New / Options, every named thread with a kur one-liner. `r` rename, `d` delete. Esc on an empty prompt returns home; **C-q** quits. `pixie --new` / `-n` and `--resume [id]` skip the home screen. **C-s** still lists chats in-thread. The 8B wakes when you enter a thread. Title bar shows a grok-style meter of the 24k prompt window (compact at 70%). Tool-loop guard is 64 rounds per turn.
+- Options **Sudo** is a sitting: RAM secret or a live ticket, never written to disk. Confirm still gates `execute_bash`. Path gate stays for file tools.
 - Bubbled TUI, Runes **Tab / Shift-Tab** (Ctrl-R alias):
   - **Chat** (12) — house, remember, search_house, wiki, list_dir, grep_files, bash (`sh -c`, confirm), files, systemd, mail. **No Magpie search**.
   - **Deep** (20) — light DDG HTML `web_research`, `fetch_web_page`, wiki, search_house, list_dir, grep_files. Never `menagerie ensure magpie`.
@@ -52,6 +53,7 @@ you → pixie TUI  --HTTP-->  llama-server :8080  (llama.cpp)
 | `~/.cache/pixie/sessions/*.meta.json` | session name / renamed / named_from |
 | `~/.config/pixie/persona.md` | optional persona overlay |
 | `~/.config/pixie/ui.json` | verbose / sparkle / default rune |
+| `$XDG_RUNTIME_DIR/pixie/askpass*` | sitting sudo helper (not config) |
 
 ## Later
 

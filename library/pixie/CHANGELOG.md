@@ -1,5 +1,12 @@
 # Pixie changelog
 
+## v0.3.1 dashboard, thread bar, sitting sudo (2026-10-25)
+
+- Home screen: house star, New / Options, every thread as a two-line row (name + kur blurb). `d` deletes (y). Esc in an empty chat returns here; C-q still quits.
+- Thread meter in the chat title from the 24k prompt window. Compact still at 70%.
+- 8B wakes when you enter a thread, not on the splash.
+- Options **Sudo**: off, or a sitting RAM secret / existing ticket. `pixie --askpass` + `$XDG_RUNTIME_DIR` socket. Never ui.json / jsonl / argv. 15 min idle drops it. Confirm still on bash.
+
 ## v0.3.0 door, names, endless thread (2026-10-25)
 
 - Bare `pixie` opens Resume / New / Options after the splash. `--new` and `--resume [id]` skip the door.
