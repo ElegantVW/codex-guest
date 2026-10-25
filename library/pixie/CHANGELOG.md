@@ -2,6 +2,10 @@
 
 ## v0.2.3 harness (2026-10-25)
 
+- TUI glass: file cards teach C-o/C-l/C-n/C-p. Quiet tools show the tool name. Live JSON is `calling {name}…`, not a Pixie speech bubble.
+- Typing: key Press only; SGR mouse CSI stripped from insert/paste. sudo cannot paint on the alternate screen (`setsid` + `SUDO_ASKPASS=/bin/false`).
+
+
 - Tool results are `<tool_result>` on `role: user`, never llama `role: tool`. Harness nudges tagged `<harness>`.
 - Chat 12 rounds; Build/Deep/Plan 20. `list_dir $HOME` / `.config` capped. Inspect Pixie in `~/pixie`.
 - Chat/Build `execute_bash` uses `sh -c` so `&&` works. Plan stays argv allowlist.
