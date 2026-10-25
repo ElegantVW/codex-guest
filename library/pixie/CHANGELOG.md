@@ -1,5 +1,17 @@
 # Pixie changelog
 
+## v0.2.5 think + tool (2026-10-25)
+
+- Each round's `<think>` is committed on the tool card. A tool call no longer wipes the thought.
+- Verbose paints two tracks: `think 1`, `think 2`, … and `tool 1 · name`, `tool 2 · name`, … both stay in the chat.
+
+## v0.2.4 TUI replies (2026-10-25)
+
+- Clip bubbles that start above the viewport. A verbose think/tool taller than the pane no longer paints an empty chat (replies vanishing).
+- Footer labels **C-v verbose** (pink when on). C-v works while she is busy. C-h stays help.
+- Live JSON hide only when the speech *is* a tool object. A normal reply that mentions a tool stays visible.
+- SmolLM sparkle runs on the worker thread so the TUI does not freeze on Done.
+
 ## v0.2.3 harness (2026-10-25)
 
 - TUI glass: file cards teach C-o/C-l/C-n/C-p. Quiet tools show the tool name. Live JSON is `calling {name}…`, not a Pixie speech bubble.

@@ -2,7 +2,7 @@
 
 **Role:** Local AI familiar with tools (files, shell, house spells), fully offline. `pixie` / `pixie "…"`; llama-server on `127.0.0.1:8080` via `menagerie`.
 
-**Status:** Rust engine (v0.2.3). Python `bin/pixie` retired. Menagerie / ask / imp stay Python in this pass.
+**Status:** Rust engine (v0.2.5). Python `bin/pixie` retired. Menagerie / ask / imp stay Python in this pass.
 
 ## Current
 
