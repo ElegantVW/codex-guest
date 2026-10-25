@@ -2,20 +2,21 @@
 
 **Role:** Local AI familiar with tools (files, shell, house spells), fully offline. `pixie` / `pixie "…"`; llama-server on `127.0.0.1:8080` via `menagerie`.
 
-**Status:** Rust engine (v0.2.5). Python `bin/pixie` retired. Menagerie / ask / imp stay Python in this pass.
+**Status:** Rust engine (v0.2.6). Python `bin/pixie` retired. Menagerie / ask / imp stay Python in this pass.
 
 ## Current
 
 - Engine: Rust ELF `~/.local/lib/faeos/pixie`, thin launcher `~/bin/pixie`. Build: `./build.sh install --house`.
-- Model: Huihui Qwen3-8B abliterated v2 Q4_K_M on this box (menagerie). CPU default (`-ngl 0`).
-- Bare `pixie` → bubbled TUI, Runes **Tab / Shift-Tab** (Ctrl-R alias):
+- Model: Huihui Qwen3-8B abliterated v2 Q4_K_M on this box (menagerie). Live mouth is GPU (`-ngl 99`), ctx **16384**. Native GGUF window is 40k.
+- Bare `pixie` resumes the latest `~/.cache/pixie/sessions/*.jsonl`. `pixie --new` / `-n` starts blank. **C-s** session overlay (enter load, n new). `--chats` / `--chat` / `--resume [id]` still work. Memory inject 6k, file 24k. Prompt history is a 24k-char window.
+- Bubbled TUI, Runes **Tab / Shift-Tab** (Ctrl-R alias):
   - **Chat** (12) — house, remember, search_house, wiki, list_dir, grep_files, bash (`sh -c`, confirm), files, systemd, mail. **No Magpie search**.
   - **Deep** (20) — light DDG HTML `web_research`, `fetch_web_page`, wiki, search_house, list_dir, grep_files. Never `menagerie ensure magpie`.
   - **Build** (20) — inspect `~/pixie` first; `edit_local_file` / `write_local_file`; search_house.
   - **Plan** (20) — read-only bash allowlist + inspect + `write_plan` (cache only). Overlay shows the plan. y → Build in `~/pixie`.
 - Tool results are tagged `<tool_result>` (not llama `role: tool`). SmolLM on kur `:8081` adds the cute line; the 8B does JSON and facts.
 - You/Pixie sit in content-sized bubbles (right blush / left pink). House star splash on launch; wait spinner is the star’s own rows (`*` `\|/` `---*---` `/|\`), not a generic ticker. Prompt box grows with wrapped text (same wrap for height, paint, and cursor).
-- File cards: green `+` / red `−` on writes; **C-l** look · **C-o** open · **C-p / C-n** cycle. **C-h** help · **C-v** verbose · **C-q** quit. Bare letters always type.
+- File cards: green `+` / red `−` on writes; **C-l** look · **C-o** open · **C-p / C-n** cycle. **C-h** help · **C-v** verbose · **C-s** sessions · **C-q** quit. Bare letters always type.
 - Host card every turn (OS, zsh, CPU, GPU, RAM, term, session). House pack in `config/pixie/context/`.
 - Barge-in: type + Enter aborts the in-flight reply. Quiet hides `<think>` but jsonl stores it.
 - `look` stub: eye still sleeping (vision Pass 2).

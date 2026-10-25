@@ -1,5 +1,12 @@
 # Pixie changelog
 
+## v0.2.6 keep the thread (2026-10-25)
+
+- Bare `pixie` resumes the latest jsonl. `pixie --new` (`-n`) starts a blank session. C-s lists chats (enter load, n new).
+- On quit, kur recaps 4–8 durable bullets into `memory.md` if the mouth is already up. Never blocks the glass; skips radio/secrets.
+- Memory inject 6k, file 24k. LLM history is a 24k-char window (oldest tools drop first), not a magic 14 entries.
+- Pixie mouth ctx **16384** in the house registry (GPU). 32k/40k stays a later CPU/KV-quant pass.
+
 ## v0.2.5 think + tool (2026-10-25)
 
 - Each round's `<think>` is committed on the tool card. A tool call no longer wipes the thought.
