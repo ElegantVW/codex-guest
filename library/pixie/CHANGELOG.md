@@ -1,5 +1,17 @@
 # Pixie changelog
 
+## v0.2.3 harness (2026-10-25)
+
+- Tool results are `<tool_result>` on `role: user`, never llama `role: tool`. Harness nudges tagged `<harness>`.
+- Chat 12 rounds; Build/Deep/Plan 20. `list_dir $HOME` / `.config` capped. Inspect Pixie in `~/pixie`.
+- Chat/Build `execute_bash` uses `sh -c` so `&&` works. Plan stays argv allowlist.
+- Plan writes cache only; overlay shows the full plan. Approve → Build in `~/pixie`.
+- Keys: no bare letters. C-h help, C-o open, C-l look, C-v verbose, C-q quit, C-n/C-p files. Type `ok` without opening a file.
+- SmolLM (kur :8081) writes the one-line sparkle. 8B stays JSON/facts.
+- Host card: OS, zsh, CPU, GPU driver, RAM, term, session.
+- Restored `faeOS/faeOSplan.md`; removed junk `~/.config/plan/*.sh`.
+- Evidence: `cargo test --offline` 49 pass.
+
 ## v0.2.2 tools (2026-10-16)
 
 - Native llama tool_calls: keep up to 4, not only the first.
