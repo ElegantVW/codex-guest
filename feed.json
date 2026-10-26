@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated": "2026-10-26T20:40:02Z",
-  "pack_sha": "8547e58f6c5f1c97efd060f87691cab94bcafb483d8d6e259ad23fc60b556d39",
+  "generated": "2026-10-26T22:46:01Z",
+  "pack_sha": "1d8b0095b1dcc781765a10c8a44c60277847445fdbe8b32f747858124d4f4266",
   "creatures": [
     {
       "name": "kindling",
@@ -23,9 +23,9 @@
       "name": "pixie",
       "blurb": "helper, no cloud",
       "url": "https://github.com/ElegantVW/pixie",
-      "commit": "pixie: housekeeping",
-      "date": "2026-10-26T18:33:47Z",
-      "sha": "9ddccff"
+      "commit": "feat(ui): implement grove-synced keyboard shortcuts",
+      "date": "2026-10-26T22:34:34Z",
+      "sha": "be42d11"
     },
     {
       "name": "magpie",
@@ -39,9 +39,9 @@
       "name": "siren",
       "blurb": "plays your music",
       "url": "https://github.com/ElegantVW/siren",
-      "commit": "feat: mixer speaker fader and house-wave mute",
-      "date": "2026-10-11T01:03:46+01:00",
-      "sha": "f51c1cf"
+      "commit": "feat(siren): add HEOS JSON support and improve playback robustness",
+      "date": "2026-10-26T22:34:55Z",
+      "sha": "d4ccb5c"
     },
     {
       "name": "goblin",
