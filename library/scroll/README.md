@@ -54,6 +54,8 @@ cargo build --release
 Keys: `Tab` / `Shift-Tab` pages (`cycle_next` / `cycle_previous` in Grove's
 canonical keyboard catalog) · `1–9` runes · `j/k` scroll · `g`/`G` jumps ·
 `Ctrl-F` searchable app index / quick-jump · `m` ambience · `q` quit.
+Page turns briefly accent the title glyph; set `SCROLL_REDUCED_MOTION=1` for
+static titles.
 On PATH, type to filter, use arrows or `j/k`, then Enter to print the selected
 command name. Double-click prints it too. In a shell capture, the picker uses
 the controlling TTY and keeps stdout reserved for that command name.
@@ -77,8 +79,9 @@ python3 -m pytest tests/ -q
 ```
 
 Rust tests cover page inventory/content shape, runtime egg states, navigation
-and search, PATH scanning/filtering/cache expiry and write failures, and rune
-argument parsing. zsh PTY checks cover the faeOS stdout-capture /
+and search, title-only page-turn accents and reduced-motion behavior, PATH
+scanning/filtering/cache expiry and write failures, and rune argument parsing.
+zsh PTY checks cover the faeOS stdout-capture /
 controlling-TTY contract, `print -z` inserting the picked command, and quitting
 without changing the ZLE buffer. The Python fallback still requires its
 existing faeOS `bin/` libraries.

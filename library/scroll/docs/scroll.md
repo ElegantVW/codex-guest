@@ -11,6 +11,9 @@ Canonical repo: `ElegantVW/scroll`. faeOS keeps only a thin launcher.
 - **1–9** — cast footer runes (**run** the spell)
 - **g / G + digit** — vim-style page jump (11–20 / 21–30)
 - **j/k · wheel** — scroll within a long page
+- Tab page turns briefly accent the title glyph only; set
+  `SCROLL_REDUCED_MOTION=1` to keep the title static. Page content, runes, and
+  PATH selection remain still.
 - **PATH leaf** — filter · Enter → print name for shell `print -z`
 - Layout: near-fullscreen panels with small margin so box edges show
 

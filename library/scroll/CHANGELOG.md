@@ -8,6 +8,7 @@
 - Made cache replacement atomic and refresh/write failures visible; malformed or stale cache data is rebuilt.
 - Rust now draws on the controlling TTY when stdout is captured, reserving stdout for only the PATH selection; zsh PTY checks verified captured output, `print -z` insertion, and quit-without-edit behavior.
 - faeOS `bin/scroll` prefers the release binary and retains the Python launcher as a `SCROLL_BIN` rollback.
+- Tab and Shift-Tab briefly accent the page-title glyph; `SCROLL_REDUCED_MOTION=1` preserves static titles without changing page content or PATH selection.
 
 ## v1.0.0 1nk (2026-10-11)
 

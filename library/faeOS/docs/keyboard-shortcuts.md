@@ -34,7 +34,7 @@ Wisp.
 `python3 tools/sync-keyboard-shortcuts.py --check` detects drift. The
 generator validates the catalog version before producing adapters.
 
-The first pilot keeps the existing Tab / Shift+Tab behavior in all three
+The first pilot keeps the existing Tab / Shift+Tab behavior in all five
 apps. The adapters normalize terminal differences such as `BackTab` versus
 `Tab` with a Shift modifier, and reject Ctrl/Alt/Super-modified variants.
 
