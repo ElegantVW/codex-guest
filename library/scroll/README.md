@@ -41,6 +41,11 @@ App information for Rust lives in `data/pages.json`. Keep it in curriculum
 order with `src/model.rs`'s runtime egg pages; while the Python fallback is
 retained, mirror curriculum updates in `scroll_pages.py` too.
 
+Developers and AI agents should start with
+[`docs/development.md`](docs/development.md) and the repository's
+[`AGENTS.md`](AGENTS.md). Codex mirrors these technical references; this
+repository remains their source of truth.
+
 ## Use
 
 ```bash
@@ -51,8 +56,14 @@ cargo build --release
 ./target/release/scroll-rs -x <cmd>     # run a PATH match without the TUI
 ```
 
-On every launch, the Scroll title briefly scrambles into place. Set
-`SCROLL_REDUCED_MOTION=1` to skip the title reveal and page-turn cue.
+On every launch, Scroll presents a skippable animated welcome: a sigil forms,
+the title letters resolve, and the rounded frame opens. Any key or mouse
+input skips to the book; `q` exits. Set `SCROLL_REDUCED_MOTION=1` to skip the
+splash and keep page changes static.
+
+Tab and Shift+Tab move lessons with a short vertical page-turn: the next page
+enters from below, and the previous page from above. The animation is
+interruptible and reduced-motion safe.
 
 Keys: `Tab` / `Shift-Tab` pages (`cycle_next` / `cycle_previous` in Grove's
 canonical keyboard catalog) · `↑` / `↓` scroll lesson text · `PageUp` /
@@ -83,8 +94,9 @@ python3 -m pytest tests/ -q
 ```
 
 Rust tests cover page inventory/content shape, runtime egg states, navigation
-and search, title-only page-turn accents and reduced-motion behavior, PATH
-scanning/filtering/cache expiry and write failures, and rune argument parsing.
+and search, splash storyboard phases, vertical cycle direction/easing and
+retargeting, reduced-motion behavior, PATH scanning/filtering/cache expiry and
+write failures, and rune argument parsing.
 zsh PTY checks cover the faeOS stdout-capture /
 controlling-TTY contract, `print -z` inserting the picked command, and quitting
 without changing the ZLE buffer. The Python fallback still requires its

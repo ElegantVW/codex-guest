@@ -14,8 +14,12 @@ leaf is PATH (print to prompt).
 - **Mouse wheel** — scroll lesson text or move the PATH selection
 - **1–9** — cast footer runes (**run** the spell)
 - **Ctrl+F** — search lesson names, commands, topics, and page text; Enter opens
-- **Title reveal** — plays on every launch; `SCROLL_REDUCED_MOTION=1` disables
-  the reveal and page-turn motion
+- **Launch splash** — sigil, scrambling title, rounded frame, and welcome cue;
+  any key or mouse skips it; `q` quits
+- **Vertical page turn** — Tab brings the next lesson from below; Shift+Tab
+  brings the previous lesson from above
+- **Reduced motion** — `SCROLL_REDUCED_MOTION=1` skips the splash and disables
+  page-turn motion
 - **PATH leaf** — filter · Enter → print name for shell `print -z`
 - Layout: rounded, color-layered panels with a small outer margin
 
@@ -50,6 +54,8 @@ not promise visual or keybinding parity.
 - The Rust display uses one semantic Scroll palette and rounded frames.
   `SCROLL_UNICODE=ascii` selects ASCII panel borders and `NO_COLOR` disables
   terminal colors.
+- Developer and AI-agent guidance lives in `docs/development.md` and root
+  `AGENTS.md`; Codex harvests both from this canonical repository.
 
 ## Sealed Leaf / egg
 - Story: an **egg in the Menagerie** to hatch; points at **`murmur`** (babbling glass).

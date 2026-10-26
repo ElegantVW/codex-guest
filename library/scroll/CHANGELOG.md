@@ -6,7 +6,9 @@
   controls and paths to lesson search, runes, and PATH.
 - Added rounded panels and a restrained semantic palette, with ASCII-border
   and `NO_COLOR` fallbacks.
-- Added a short title-letter reveal on launch and a reduced-motion path.
+- Added a skippable sigil/title/frame splash and an eased vertical push for
+  next/previous lesson cycles, both with a reduced-motion path.
+- Added canonical developer and AI-agent guidance for Codex to harvest.
 - Replaced Rust `j`/`k` scrolling and `g`/`G` jumps with arrows and
   PageUp/PageDown, while retaining the Grove Tab / Shift+Tab cycle.
 - Kept the Python implementation as a minimal rollback rather than promising

@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated": "2026-10-26T19:53:19Z",
-  "pack_sha": "f84520f821cb79a91336a1210809d8f997f825ed5065eeb86e764397a460c6af",
+  "generated": "2026-10-26T20:40:02Z",
+  "pack_sha": "8547e58f6c5f1c97efd060f87691cab94bcafb483d8d6e259ad23fc60b556d39",
   "creatures": [
     {
       "name": "kindling",
@@ -87,17 +87,17 @@
       "name": "scroll",
       "blurb": "house book",
       "url": "https://github.com/ElegantVW/scroll",
-      "commit": "CHANGELOG: release entry",
-      "date": "2026-10-11T05:40:58+01:00",
-      "sha": "e3f0953"
+      "commit": "scroll: elevate Grove first-run guide",
+      "date": "2026-10-26T20:38:51Z",
+      "sha": "8d1c50d"
     },
     {
       "name": "faeOS",
       "blurb": "pink house, offline",
       "url": "https://github.com/ElegantVW/faeOS",
-      "commit": "Homepage: front door is Grove",
-      "date": "2026-10-11T04:55:53+01:00",
-      "sha": "19ed66d"
+      "commit": "docs: refresh Scroll and Grove guidance",
+      "date": "2026-10-26T20:38:51Z",
+      "sha": "3f7e620"
     },
     {
       "name": "grove",
@@ -172,6 +172,7 @@
     "library/scroll/CHANGELOG.md",
     "library/scroll/README.md",
     "library/scroll/docs/scroll.md",
+    "library/scroll/docs/development.md",
     "library/faeOS/CHANGELOG.md",
     "library/faeOS/README.md",
     "library/faeOS/docs/sigils.md",
