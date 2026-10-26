@@ -26,8 +26,16 @@ pages at the end keeps existing g/G jump positions stable.
 - The Rust app is self-contained: it reads faeOS egg state directly and
   optionally uses its own mpv ambience socket. It does not import Pixie
   internals or edit faeOS shared libraries.
-- The Python `scroll` and `scroll_pages.py` files remain the untouched fallback
-  until Rust parity is verified. No shared launcher has been switched yet.
+- The current faeOS `bin/scroll` launcher is a separate shell script that
+  discovers the checkout executable; `bin/summon` remains a Python wrapper
+  setting `FAE_SCROLL_TAB=path`. Neither launcher has been switched to Rust.
+- Keep Python active as the rollback until Rust shell insertion (`print -z`),
+  app command execution, and terminal behavior are verified in faeOS. Rust
+  preserves the shared `~/.cache/pixie/summon.list` format and six-hour TTL;
+  cache writes are atomic and refresh errors are reported.
+- Rust page text is maintained in `data/pages.json` against current faeOS
+  app/CLI documentation. `scroll_pages.py` remains the active reference for
+  the current launcher until migration.
 
 ## Sealed Leaf / egg
 - Story: an **egg in the Menagerie** to hatch; points at **`murmur`** (babbling glass).

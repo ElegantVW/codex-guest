@@ -1,5 +1,13 @@
 # Pixie changelog
 
+## v0.3.2 safer house boundaries (2026-10-26)
+
+- File tools resolve existing path ancestors before checking the home boundary, including new descendants beneath symlinks; missing or relative `HOME` is rejected instead of widening access.
+- Shell commands run in a dedicated process group. Cancellation and timeouts stop the group, and a completed shell cannot leave a background child holding Pixie's output pipes open.
+- UI preferences and session metadata use atomic replacement. Malformed preferences and memory/session persistence failures now report errors rather than silently pretending to succeed.
+- LLM health checks and requests reject malformed `PIXIE_LLM_HOST` / `PIXIE_LLM_PORT` instead of probing a fallback address.
+- Evidence: `cargo test --offline --locked` (77 passing); `cargo check --offline --locked --all-targets`.
+
 ## v0.3.1 dashboard, thread bar, sitting sudo (2026-10-25)
 
 - Home screen: house star, New / Options, every thread as a two-line row (name + kur blurb). `d` deletes (y). Esc in an empty chat returns here; C-q still quits.

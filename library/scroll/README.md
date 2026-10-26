@@ -31,8 +31,10 @@ The book has 35 static pages plus the egg leaf (`hermetic` or `kur`, based on
 runtime hatch state) and the virtual PATH leaf: 37 leaves in Tab order.
 
 The staged Rust app is `scroll-rs`; the existing Python `scroll` executable
-and `scroll_pages.py` are intentionally preserved as the fallback. Until the
-faeOS launcher is deliberately switched, choose `scroll-rs` explicitly.
+and `scroll_pages.py` remain the active faeOS implementation and rollback
+fallback. The faeOS launcher is a separate thin script and has not been
+migrated: the Rust build is still being verified against its shell and
+terminal integration. Choose `scroll-rs` explicitly to try it.
 
 App information for Rust lives in `data/pages.json`. Keep it in curriculum
 order with `src/model.rs`'s runtime egg pages; while the Python fallback is
@@ -52,7 +54,9 @@ Keys: `Tab` / `Shift-Tab` pages · `1–9` runes · `j/k` scroll · `g`/`G` jump
 `Ctrl-F` searchable app index / quick-jump · `m` ambience · `q` quit.
 On PATH, type to filter, use arrows or `j/k`, then Enter to print the selected
 command name. Double-click prints it too. `--refresh` refreshes the shared
-six-hour PATH cache.
+six-hour shared PATH cache. Refreshes replace the cache atomically; if a
+refresh cannot be written, Scroll reports the error and uses the freshly
+scanned PATH for the current run. An unreadable/corrupt cache is rebuilt.
 
 ## Build and parity
 
@@ -69,8 +73,9 @@ python3 -m pytest tests/ -q
 ```
 
 Rust tests cover page inventory/content shape, runtime egg states, navigation
-and search, PATH scanning/filtering/cache expiry, and rune argument parsing.
-The legacy Python fallback still requires its existing faeOS `bin/` libraries.
+and search, PATH scanning/filtering/cache expiry and write failures, and rune
+argument parsing. The legacy Python implementation and faeOS launcher remain
+unchanged; it still requires its existing faeOS `bin/` libraries.
 
 ## License
 
