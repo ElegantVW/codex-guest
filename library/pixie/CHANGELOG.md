@@ -6,6 +6,7 @@
 - Thread meter in the chat title from the 24k prompt window. Compact still at 70%.
 - 8B wakes when you enter a thread, not on the splash.
 - Options **Sudo**: off, or a sitting RAM secret / existing ticket. `pixie --askpass` + `$XDG_RUNTIME_DIR` socket. Never ui.json / jsonl / argv. 15 min idle drops it. Confirm still on bash.
+- Failed plan writes and sitting-sudo setup errors are surfaced; sitting mode is enabled only after the helper wrapper and socket are ready.
 
 ## v0.3.0 door, names, endless thread (2026-10-25)
 

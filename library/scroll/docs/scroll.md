@@ -14,9 +14,20 @@ Canonical repo: `ElegantVW/scroll`. faeOS keeps only a thin launcher.
 - Layout: near-fullscreen panels with small margin so box edges show
 
 ## Curriculum
-See `CURRICULUM` in `scroll_pages.py`. Ends with **switcher**, **tv**, then the
-**Sealed Leaf** (or **Kur** if hatched), then **PATH**. Appending new pages at
-the end keeps pages 1–33 (and the g/G jump map) stable.
+Python fallback order is in `CURRICULUM` in `scroll_pages.py`; Rust order and
+app/command copy lives in `data/pages.json`. Both end with **switcher**, **tv**,
+then the **Sealed Leaf** (or **Kur** if hatched), then **PATH**. Keep both
+copies aligned until the faeOS launcher migration is approved. Appending new
+pages at the end keeps existing g/G jump positions stable.
+
+## Rust staging
+- Build with `cargo build --release`; launch `target/release/scroll-rs`.
+- `Ctrl-F` opens the searchable app index and quick-jump.
+- The Rust app is self-contained: it reads faeOS egg state directly and
+  optionally uses its own mpv ambience socket. It does not import Pixie
+  internals or edit faeOS shared libraries.
+- The Python `scroll` and `scroll_pages.py` files remain the untouched fallback
+  until Rust parity is verified. No shared launcher has been switched yet.
 
 ## Sealed Leaf / egg
 - Story: an **egg in the Menagerie** to hatch; points at **`murmur`** (babbling glass).

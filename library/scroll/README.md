@@ -9,10 +9,9 @@ is, how to live with her (keys included), which spells to type, and footer
 runes that cast her. The last leaf is PATH — every tool on `$PATH`, printed
 to your prompt so you may finish the line yourself.
 
-Runs from a faeOS checkout: shared house libs (`fae_termart`, `fae_egg`,
-`fae_ambience`) live in faeOS `bin/` — faeOS keeps only a thin launcher.
-
-For: faeOS onboarding, one page per app. Not for: standalone use outside faeOS.
+For: faeOS onboarding, one page per app. The Rust build is standalone; no
+Pixie or faeOS Python libraries are required. Python remains available as the
+unchanged fallback while Rust parity is verified.
 
 ## Look
 
@@ -28,36 +27,50 @@ For: faeOS onboarding, one page per app. Not for: standalone use outside faeOS.
 
 ## Status
 
-**It runs.** `scroll` opens the book, `scroll --path` (`summon`) opens the
-PATH leaf, `scroll list` dumps every page as text. 35 static pages plus the
-egg leaf (sealed `hermetic` — or `kur` once hatched) and the virtual PATH
-leaf: 37 leaves, Tab order.
+The book has 35 static pages plus the egg leaf (`hermetic` or `kur`, based on
+runtime hatch state) and the virtual PATH leaf: 37 leaves in Tab order.
 
-Authoring rule: new shipped app ⇒ add an `AppPage` in `scroll_pages.py`
-before calling it done.
+The staged Rust app is `scroll-rs`; the existing Python `scroll` executable
+and `scroll_pages.py` are intentionally preserved as the fallback. Until the
+faeOS launcher is deliberately switched, choose `scroll-rs` explicitly.
+
+App information for Rust lives in `data/pages.json`. Keep it in curriculum
+order with `src/model.rs`'s runtime egg pages; while the Python fallback is
+retained, mirror curriculum updates in `scroll_pages.py` too.
 
 ## Use
 
 ```bash
-scroll              # open the book on page one
-scroll --path       # PATH leaf (same as summon)
-scroll list         # every page as text (for grepping)
-summon              # PATH leaf short name
-summon -x <cmd>     # run a PATH match without the TUI
+cargo build --release
+./target/release/scroll-rs              # open the book on page one
+./target/release/scroll-rs --path       # PATH leaf (same as summon)
+./target/release/scroll-rs list         # every page as text (for grepping)
+./target/release/scroll-rs -x <cmd>     # run a PATH match without the TUI
 ```
 
 Keys: `Tab` / `Shift-Tab` pages · `1–9` runes · `j/k` scroll · `g`/`G` jumps ·
-`m` ambience · `q` quit
+`Ctrl-F` searchable app index / quick-jump · `m` ambience · `q` quit.
+On PATH, type to filter, use arrows or `j/k`, then Enter to print the selected
+command name. Double-click prints it too. `--refresh` refreshes the shared
+six-hour PATH cache.
 
-## Build
+## Build and parity
 
-No build — Python 3, stdlib only, needs a faeOS `bin/` beside it (or on
-`~/bin`) for the house libs.
+Rust uses a standalone Cargo manifest and does not import Pixie internals.
+Egg state is read from the standard faeOS egg JSON files. Ambience is optional:
+it needs the chiptune track and `mpv`; its IPC socket is kept in
+`$XDG_RUNTIME_DIR` (or `~/.cache/faeos/runtime` if unset), never Siren's socket.
 
 ```bash
+cargo fmt --check
+cargo test
+cargo build --release
 python3 -m pytest tests/ -q
-SCROLL_BIN=~/scroll/scroll scroll   # via the faeOS thin launcher
 ```
+
+Rust tests cover page inventory/content shape, runtime egg states, navigation
+and search, PATH scanning/filtering/cache expiry, and rune argument parsing.
+The legacy Python fallback still requires its existing faeOS `bin/` libraries.
 
 ## License
 
