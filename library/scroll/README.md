@@ -2,14 +2,14 @@
 
 ![Scroll hero](assets/hero/scroll.svg)
 
-> **one page per app, Tab teaches faeOS — the last leaf opens PATH**
+> **one page per app, Tab teaches Grove — the last leaf opens PATH**
 
 Scroll is how the house teaches itself. Each page is one creature: who she
 is, how to live with her (keys included), which spells to type, and footer
 runes that cast her. The last leaf is PATH — every tool on `$PATH`, printed
 to your prompt so you may finish the line yourself.
 
-For: faeOS onboarding, one page per app. The Rust build is standalone; no
+For: Grove onboarding, one page per app. The Rust build is standalone; no
 Pixie or faeOS Python libraries are required. The faeOS launcher prefers the
 Rust release binary when available and keeps the Python app as a rollback.
 
@@ -51,14 +51,18 @@ cargo build --release
 ./target/release/scroll-rs -x <cmd>     # run a PATH match without the TUI
 ```
 
+On every launch, the Scroll title briefly scrambles into place. Set
+`SCROLL_REDUCED_MOTION=1` to skip the title reveal and page-turn cue.
+
 Keys: `Tab` / `Shift-Tab` pages (`cycle_next` / `cycle_previous` in Grove's
-canonical keyboard catalog) · `1–9` runes · `j/k` scroll · `g`/`G` jumps ·
-`Ctrl-F` searchable app index / quick-jump · `m` ambience · `q` quit.
-Page turns briefly accent the title glyph; set `SCROLL_REDUCED_MOTION=1` for
-static titles.
-On PATH, type to filter, use arrows or `j/k`, then Enter to print the selected
-command name. Double-click prints it too. In a shell capture, the picker uses
-the controlling TTY and keeps stdout reserved for that command name.
+canonical keyboard catalog) · `↑` / `↓` scroll lesson text · `PageUp` /
+`PageDown` move by a screen · `1–9` runes · `Ctrl-F` searches lessons · `m`
+ambience · `q` quit. Use the opening Scroll lesson as the quick orientation.
+
+On PATH, type to filter, use `↑` / `↓` to select and `PageUp` / `PageDown` to
+move by a screen, then Enter to print the selected command name. Double-click
+also prints it. In a shell capture, the picker uses the controlling TTY and
+keeps stdout reserved for that command name.
 `--refresh` refreshes the shared
 six-hour PATH cache. Refreshes replace the cache atomically; if a
 refresh cannot be written, Scroll reports the error and uses the freshly
