@@ -6,7 +6,8 @@ Canonical repo: `ElegantVW/scroll`. faeOS keeps only a thin launcher.
 **Status:** 35 static pages + egg leaf + PATH leaf = 37 leaves (switcher + tv added 2026-09-28).
 
 ## Navigation
-- **Tab / Shift-Tab** — next / previous page (curriculum order)
+- **Tab / Shift-Tab** — next / previous page (`cycle_next` /
+  `cycle_previous` in Grove's canonical keyboard catalog)
 - **1–9** — cast footer runes (**run** the spell)
 - **g / G + digit** — vim-style page jump (11–20 / 21–30)
 - **j/k · wheel** — scroll within a long page

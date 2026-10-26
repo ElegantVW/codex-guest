@@ -48,6 +48,15 @@ Always disable mouse in `tui_cleanup`. Shift+drag stays with the terminal for te
 
 Stay lean (suite ≪ 100 MB). No big-bang rewrite.
 
+## Keyboard contract
+
+Grove's shared action names and default combinations live in
+[keyboard-shortcuts.md](keyboard-shortcuts.md), with versioned source data in
+`config/keyboard-shortcuts.json`. Shared `cycle_next` and `cycle_previous`
+bindings are Tab and Shift+Tab; app context determines which ordered views,
+pages, or modes cycle. Keep shell line-editor widgets and system Alt+Tab
+switching separate from in-app navigation.
+
 ## Related
 
 - CLI human voice (per-app trees): [cli-voice.md](cli-voice.md)

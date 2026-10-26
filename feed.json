@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated": "2026-10-26T18:42:11Z",
-  "pack_sha": "0c304bacc1737df08090a7b50b9852cee28d09fffa4318f150faad810d8ca0c4",
+  "generated": "2026-10-26T19:05:59Z",
+  "pack_sha": "299ada63f8104ced18cd17ed65f35330d6c79d1f52402da11620a317079a2cd9",
   "creatures": [
     {
       "name": "kindling",
@@ -207,6 +207,7 @@
     "library/faeOS/docs/plans/imbue.md",
     "library/faeOS/docs/elegantvw.md",
     "library/faeOS/docs/error-voice.md",
+    "library/faeOS/docs/keyboard-shortcuts.md",
     "library/faeOS/docs/engines.md",
     "library/faeOS/docs/design.md",
     "library/faeOS/docs/boot-branding.md",

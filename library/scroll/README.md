@@ -51,7 +51,8 @@ cargo build --release
 ./target/release/scroll-rs -x <cmd>     # run a PATH match without the TUI
 ```
 
-Keys: `Tab` / `Shift-Tab` pages · `1–9` runes · `j/k` scroll · `g`/`G` jumps ·
+Keys: `Tab` / `Shift-Tab` pages (`cycle_next` / `cycle_previous` in Grove's
+canonical keyboard catalog) · `1–9` runes · `j/k` scroll · `g`/`G` jumps ·
 `Ctrl-F` searchable app index / quick-jump · `m` ambience · `q` quit.
 On PATH, type to filter, use arrows or `j/k`, then Enter to print the selected
 command name. Double-click prints it too. In a shell capture, the picker uses
@@ -77,9 +78,14 @@ python3 -m pytest tests/ -q
 
 Rust tests cover page inventory/content shape, runtime egg states, navigation
 and search, PATH scanning/filtering/cache expiry and write failures, and rune
-argument parsing. A PTY check covers the faeOS stdout-capture / controlling-TTY
-contract. The Python fallback still requires its existing faeOS `bin/`
-libraries.
+argument parsing. zsh PTY checks cover the faeOS stdout-capture /
+controlling-TTY contract, `print -z` inserting the picked command, and quitting
+without changing the ZLE buffer. The Python fallback still requires its
+existing faeOS `bin/` libraries.
+
+The generated binding adapter is `src/grove_keys.rs`; regenerate from Grove
+with `python3 ../faeOS/tools/sync-keyboard-shortcuts.py` and verify with
+`--check`.
 
 ## License
 
