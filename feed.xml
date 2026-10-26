@@ -4,12 +4,12 @@
     <title>ElegantVW — lately</title>
     <link>https://github.com/ElegantVW/codex-guest</link>
     <description>What uncle has been building. Public Grove shelf.</description>
-    <lastBuildDate>2026-10-26T18:21:42Z</lastBuildDate>
+    <lastBuildDate>2026-10-26T18:42:11Z</lastBuildDate>
     <item>
       <title>Now — studio window</title>
       <link>https://github.com/ElegantVW/codex-guest</link>
-      <guid isPermaLink="false">codex-now-a6ed0751f248cc02db1d4189377eae381e1856eaba3c06e5a4e27ce71bf4738a</guid>
-      <pubDate>2026-10-26T18:21:42Z</pubDate>
+      <guid isPermaLink="false">codex-now-0c304bacc1737df08090a7b50b9852cee28d09fffa4318f150faad810d8ca0c4</guid>
+      <pubDate>2026-10-26T18:42:11Z</pubDate>
       <description>Work in flight. Open the exe, tab Now.</description>
     </item>
     <item>
@@ -27,10 +27,10 @@
       <description>lock and guard</description>
     </item>
     <item>
-      <title>pixie: pixie: prompt wrap by columns so a new line does not stomp the first</title>
+      <title>pixie: pixie: housekeeping</title>
       <link>https://github.com/ElegantVW/pixie</link>
-      <guid isPermaLink="false">https://github.com/ElegantVW/pixie/commit/6a35f1b</guid>
-      <pubDate>2026-10-16T16:01:30+01:00</pubDate>
+      <guid isPermaLink="false">https://github.com/ElegantVW/pixie/commit/9ddccff</guid>
+      <pubDate>2026-10-26T18:33:47Z</pubDate>
       <description>helper, no cloud</description>
     </item>
     <item>

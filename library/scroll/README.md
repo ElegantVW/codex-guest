@@ -10,8 +10,8 @@ runes that cast her. The last leaf is PATH — every tool on `$PATH`, printed
 to your prompt so you may finish the line yourself.
 
 For: faeOS onboarding, one page per app. The Rust build is standalone; no
-Pixie or faeOS Python libraries are required. Python remains available as the
-unchanged fallback while Rust parity is verified.
+Pixie or faeOS Python libraries are required. The faeOS launcher prefers the
+Rust release binary when available and keeps the Python app as a rollback.
 
 ## Look
 
@@ -30,11 +30,12 @@ unchanged fallback while Rust parity is verified.
 The book has 35 static pages plus the egg leaf (`hermetic` or `kur`, based on
 runtime hatch state) and the virtual PATH leaf: 37 leaves in Tab order.
 
-The staged Rust app is `scroll-rs`; the existing Python `scroll` executable
-and `scroll_pages.py` remain the active faeOS implementation and rollback
-fallback. The faeOS launcher is a separate thin script and has not been
-migrated: the Rust build is still being verified against its shell and
-terminal integration. Choose `scroll-rs` explicitly to try it.
+The Rust app is `scroll-rs`; faeOS `bin/scroll` prefers
+`~/.local/lib/faeos/scroll-rs`, `/usr/local/lib/faeos/scroll-rs`, then
+`~/scroll/target/release/scroll-rs`, before trying the existing Python
+fallbacks. When stdout is captured by the faeOS `summon` / `print -z` wrapper,
+Rust draws through `/dev/tty` and writes only the selected command to stdout.
+Set `SCROLL_BIN="$HOME/scroll/scroll"` to explicitly roll back to Python.
 
 App information for Rust lives in `data/pages.json`. Keep it in curriculum
 order with `src/model.rs`'s runtime egg pages; while the Python fallback is
@@ -53,8 +54,10 @@ cargo build --release
 Keys: `Tab` / `Shift-Tab` pages · `1–9` runes · `j/k` scroll · `g`/`G` jumps ·
 `Ctrl-F` searchable app index / quick-jump · `m` ambience · `q` quit.
 On PATH, type to filter, use arrows or `j/k`, then Enter to print the selected
-command name. Double-click prints it too. `--refresh` refreshes the shared
-six-hour shared PATH cache. Refreshes replace the cache atomically; if a
+command name. Double-click prints it too. In a shell capture, the picker uses
+the controlling TTY and keeps stdout reserved for that command name.
+`--refresh` refreshes the shared
+six-hour PATH cache. Refreshes replace the cache atomically; if a
 refresh cannot be written, Scroll reports the error and uses the freshly
 scanned PATH for the current run. An unreadable/corrupt cache is rebuilt.
 
@@ -74,8 +77,9 @@ python3 -m pytest tests/ -q
 
 Rust tests cover page inventory/content shape, runtime egg states, navigation
 and search, PATH scanning/filtering/cache expiry and write failures, and rune
-argument parsing. The legacy Python implementation and faeOS launcher remain
-unchanged; it still requires its existing faeOS `bin/` libraries.
+argument parsing. A PTY check covers the faeOS stdout-capture / controlling-TTY
+contract. The Python fallback still requires its existing faeOS `bin/`
+libraries.
 
 ## License
 

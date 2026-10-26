@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated": "2026-10-26T18:21:42Z",
-  "pack_sha": "a6ed0751f248cc02db1d4189377eae381e1856eaba3c06e5a4e27ce71bf4738a",
+  "generated": "2026-10-26T18:42:11Z",
+  "pack_sha": "0c304bacc1737df08090a7b50b9852cee28d09fffa4318f150faad810d8ca0c4",
   "creatures": [
     {
       "name": "kindling",
@@ -23,9 +23,9 @@
       "name": "pixie",
       "blurb": "helper, no cloud",
       "url": "https://github.com/ElegantVW/pixie",
-      "commit": "pixie: prompt wrap by columns so a new line does not stomp the first",
-      "date": "2026-10-16T16:01:30+01:00",
-      "sha": "6a35f1b"
+      "commit": "pixie: housekeeping",
+      "date": "2026-10-26T18:33:47Z",
+      "sha": "9ddccff"
     },
     {
       "name": "magpie",
