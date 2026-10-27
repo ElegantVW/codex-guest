@@ -6,8 +6,8 @@ RSS: https://raw.githubusercontent.com/ElegantVW/codex-guest/main/feed.xml
 
 Codex is a studio window: download the exe. Now / Lately / Next. RSS if you only want headlines.
 
+- **pixie** — chore: fmt/clippy cleanup; remove wifi_crack_plan.md (2026-10-27) · [helper, no cloud](https://github.com/ElegantVW/pixie)
 - **siren** — feat(siren): add HEOS JSON support and improve playback robustness (2026-10-26) · [plays your music](https://github.com/ElegantVW/siren)
-- **pixie** — feat(ui): implement grove-synced keyboard shortcuts (2026-10-26) · [helper, no cloud](https://github.com/ElegantVW/pixie)
 - **scroll** — scroll: elevate Grove first-run guide (2026-10-26) · [house book](https://github.com/ElegantVW/scroll)
 - **faeOS** — docs: refresh Scroll and Grove guidance (2026-10-26) · [pink house, offline](https://github.com/ElegantVW/faeOS)
 - **grove** — grove: Codex card drinks the studio feed (2026-10-24) · [the front door](https://github.com/ElegantVW/grove)

@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated": "2026-10-26T22:46:01Z",
-  "pack_sha": "1d8b0095b1dcc781765a10c8a44c60277847445fdbe8b32f747858124d4f4266",
+  "generated": "2026-10-27T17:37:06Z",
+  "pack_sha": "298d383489bec06a3d906dfe5d2168a4ab2b304dfb977cdeb9bd1692991ba515",
   "creatures": [
     {
       "name": "kindling",
@@ -23,9 +23,9 @@
       "name": "pixie",
       "blurb": "helper, no cloud",
       "url": "https://github.com/ElegantVW/pixie",
-      "commit": "feat(ui): implement grove-synced keyboard shortcuts",
-      "date": "2026-10-26T22:34:34Z",
-      "sha": "be42d11"
+      "commit": "chore: fmt/clippy cleanup; remove wifi_crack_plan.md",
+      "date": "2026-10-27T17:19:37Z",
+      "sha": "3a52905"
     },
     {
       "name": "magpie",

@@ -4,12 +4,12 @@
     <title>ElegantVW — lately</title>
     <link>https://github.com/ElegantVW/codex-guest</link>
     <description>What uncle has been building. Public Grove shelf.</description>
-    <lastBuildDate>2026-10-26T22:46:01Z</lastBuildDate>
+    <lastBuildDate>2026-10-27T17:37:06Z</lastBuildDate>
     <item>
       <title>Now — studio window</title>
       <link>https://github.com/ElegantVW/codex-guest</link>
-      <guid isPermaLink="false">codex-now-1d8b0095b1dcc781765a10c8a44c60277847445fdbe8b32f747858124d4f4266</guid>
-      <pubDate>2026-10-26T22:46:01Z</pubDate>
+      <guid isPermaLink="false">codex-now-298d383489bec06a3d906dfe5d2168a4ab2b304dfb977cdeb9bd1692991ba515</guid>
+      <pubDate>2026-10-27T17:37:06Z</pubDate>
       <description>Work in flight. Open the exe, tab Now.</description>
     </item>
     <item>
@@ -27,10 +27,10 @@
       <description>lock and guard</description>
     </item>
     <item>
-      <title>pixie: feat(ui): implement grove-synced keyboard shortcuts</title>
+      <title>pixie: chore: fmt/clippy cleanup; remove wifi_crack_plan.md</title>
       <link>https://github.com/ElegantVW/pixie</link>
-      <guid isPermaLink="false">https://github.com/ElegantVW/pixie/commit/be42d11</guid>
-      <pubDate>2026-10-26T22:34:34Z</pubDate>
+      <guid isPermaLink="false">https://github.com/ElegantVW/pixie/commit/3a52905</guid>
+      <pubDate>2026-10-27T17:19:37Z</pubDate>
       <description>helper, no cloud</description>
     </item>
     <item>
