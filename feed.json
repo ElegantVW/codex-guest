@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated": "2026-10-27T17:37:06Z",
-  "pack_sha": "298d383489bec06a3d906dfe5d2168a4ab2b304dfb977cdeb9bd1692991ba515",
+  "generated": "2026-10-27T18:00:06Z",
+  "pack_sha": "80d4757f4fe2d209654a012a209e57a494ee512d098542496b67f74be60418b9",
   "creatures": [
     {
       "name": "kindling",
@@ -23,9 +23,9 @@
       "name": "pixie",
       "blurb": "helper, no cloud",
       "url": "https://github.com/ElegantVW/pixie",
-      "commit": "chore: fmt/clippy cleanup; remove wifi_crack_plan.md",
-      "date": "2026-10-27T17:19:37Z",
-      "sha": "3a52905"
+      "commit": "feat: record mid-session rune transitions in history; inject transition context on mode switch; improve Plan->Build handoff",
+      "date": "2026-10-27T17:59:52Z",
+      "sha": "76f9a0c"
     },
     {
       "name": "magpie",
