@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated": "2026-10-27T19:10:44Z",
-  "pack_sha": "9f87cd4f3ea644b5e807e13e03aeed7b0abd3b9fc006cceadc5db2e86c586889",
+  "generated": "2026-10-27T22:20:59Z",
+  "pack_sha": "92fc34b401ae7e3333a24650b996caafcc37bb87e0c8b49a808a1d9abe19cacc",
   "creatures": [
     {
       "name": "kindling",
@@ -87,17 +87,17 @@
       "name": "scroll",
       "blurb": "house book",
       "url": "https://github.com/ElegantVW/scroll",
-      "commit": "scroll: elevate Grove first-run guide",
-      "date": "2026-10-26T20:38:51Z",
-      "sha": "8d1c50d"
+      "commit": "chore: add kilo config",
+      "date": "2026-10-27T22:09:53Z",
+      "sha": "c874cd0"
     },
     {
       "name": "faeOS",
       "blurb": "pink house, offline",
       "url": "https://github.com/ElegantVW/faeOS",
-      "commit": "docs: refresh Scroll and Grove guidance",
-      "date": "2026-10-26T20:38:51Z",
-      "sha": "3f7e620"
+      "commit": "crystal: unify WM overlays (picom/fae-wm) under crystal TUI frame",
+      "date": "2026-10-27T22:09:40Z",
+      "sha": "4d81ffc"
     },
     {
       "name": "grove",
