@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated": "2026-10-27T18:00:06Z",
-  "pack_sha": "80d4757f4fe2d209654a012a209e57a494ee512d098542496b67f74be60418b9",
+  "generated": "2026-10-27T19:10:44Z",
+  "pack_sha": "9f87cd4f3ea644b5e807e13e03aeed7b0abd3b9fc006cceadc5db2e86c586889",
   "creatures": [
     {
       "name": "kindling",
@@ -23,9 +23,9 @@
       "name": "pixie",
       "blurb": "helper, no cloud",
       "url": "https://github.com/ElegantVW/pixie",
-      "commit": "feat: record mid-session rune transitions in history; inject transition context on mode switch; improve Plan->Build handoff",
-      "date": "2026-10-27T17:59:52Z",
-      "sha": "76f9a0c"
+      "commit": "feat: improve Build mode + diff viz, options UI with mouse/sliders, sudo less-safe, shift+enter newline, build audit prefs",
+      "date": "2026-10-27T18:54:19Z",
+      "sha": "71a2ae0"
     },
     {
       "name": "magpie",
