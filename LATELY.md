@@ -6,9 +6,9 @@ RSS: https://raw.githubusercontent.com/ElegantVW/codex-guest/main/feed.xml
 
 Codex is a studio window: download the exe. Now / Lately / Next. RSS if you only want headlines.
 
+- **pixie** — fix: prevent busy-spin in less-safe askpass server (2026-10-28) · [helper, no cloud](https://github.com/ElegantVW/pixie)
 - **scroll** — chore: add kilo config (2026-10-27) · [house book](https://github.com/ElegantVW/scroll)
 - **faeOS** — crystal: unify WM overlays (picom/fae-wm) under crystal TUI frame (2026-10-27) · [pink house, offline](https://github.com/ElegantVW/faeOS)
-- **pixie** — feat: improve Build mode + diff viz, options UI with mouse/sliders, sudo less-safe, shift+enter newline, build audit prefs (2026-10-27) · [helper, no cloud](https://github.com/ElegantVW/pixie)
 - **siren** — feat(siren): add HEOS JSON support and improve playback robustness (2026-10-26) · [plays your music](https://github.com/ElegantVW/siren)
 - **grove** — grove: Codex card drinks the studio feed (2026-10-24) · [the front door](https://github.com/ElegantVW/grove)
 - **magpie** — fix format! escape in bullet prompt; checkable-bullets rule now compiles (2026-10-11) · [sourced manuals](https://github.com/ElegantVW/magpie)
