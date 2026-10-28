@@ -4,12 +4,12 @@
     <title>ElegantVW — lately</title>
     <link>https://github.com/ElegantVW/codex-guest</link>
     <description>What uncle has been building. Public Grove shelf.</description>
-    <lastBuildDate>2026-10-28T11:06:29Z</lastBuildDate>
+    <lastBuildDate>2026-10-28T11:27:49Z</lastBuildDate>
     <item>
       <title>Now — studio window</title>
       <link>https://github.com/ElegantVW/codex-guest</link>
-      <guid isPermaLink="false">codex-now-51739d5e69b3aa815ffc17428f5ac7817dbaa81fe07124b645af4c15f3a7152b</guid>
-      <pubDate>2026-10-28T11:06:29Z</pubDate>
+      <guid isPermaLink="false">codex-now-82947b1884f694454144389926f95d0a400ebc71af12c8397c34034cbee83384</guid>
+      <pubDate>2026-10-28T11:27:49Z</pubDate>
       <description>Work in flight. Open the exe, tab Now.</description>
     </item>
     <item>
@@ -27,10 +27,10 @@
       <description>lock and guard</description>
     </item>
     <item>
-      <title>pixie: fix: avoid holding seat lock across write in askpass server</title>
+      <title>pixie: fix: restore read in askpass server</title>
       <link>https://github.com/ElegantVW/pixie</link>
-      <guid isPermaLink="false">https://github.com/ElegantVW/pixie/commit/98e1be5</guid>
-      <pubDate>2026-10-28T10:57:15Z</pubDate>
+      <guid isPermaLink="false">https://github.com/ElegantVW/pixie/commit/d3e8e61</guid>
+      <pubDate>2026-10-28T11:21:35Z</pubDate>
       <description>helper, no cloud</description>
     </item>
     <item>

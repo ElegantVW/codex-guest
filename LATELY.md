@@ -6,7 +6,7 @@ RSS: https://raw.githubusercontent.com/ElegantVW/codex-guest/main/feed.xml
 
 Codex is a studio window: download the exe. Now / Lately / Next. RSS if you only want headlines.
 
-- **pixie** — fix: avoid holding seat lock across write in askpass server (2026-10-28) · [helper, no cloud](https://github.com/ElegantVW/pixie)
+- **pixie** — fix: restore read in askpass server (2026-10-28) · [helper, no cloud](https://github.com/ElegantVW/pixie)
 - **scroll** — chore: add kilo config (2026-10-27) · [house book](https://github.com/ElegantVW/scroll)
 - **faeOS** — crystal: unify WM overlays (picom/fae-wm) under crystal TUI frame (2026-10-27) · [pink house, offline](https://github.com/ElegantVW/faeOS)
 - **siren** — feat(siren): add HEOS JSON support and improve playback robustness (2026-10-26) · [plays your music](https://github.com/ElegantVW/siren)

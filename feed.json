@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated": "2026-10-28T11:06:29Z",
-  "pack_sha": "51739d5e69b3aa815ffc17428f5ac7817dbaa81fe07124b645af4c15f3a7152b",
+  "generated": "2026-10-28T11:27:49Z",
+  "pack_sha": "82947b1884f694454144389926f95d0a400ebc71af12c8397c34034cbee83384",
   "creatures": [
     {
       "name": "kindling",
@@ -23,9 +23,9 @@
       "name": "pixie",
       "blurb": "helper, no cloud",
       "url": "https://github.com/ElegantVW/pixie",
-      "commit": "fix: avoid holding seat lock across write in askpass server",
-      "date": "2026-10-28T10:57:15Z",
-      "sha": "98e1be5"
+      "commit": "fix: restore read in askpass server",
+      "date": "2026-10-28T11:21:35Z",
+      "sha": "d3e8e61"
     },
     {
       "name": "magpie",
