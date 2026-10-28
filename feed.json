@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated": "2026-10-28T10:41:48Z",
-  "pack_sha": "3a19de96ac374e350b3b67aa2284da74da6de4922ccaeac576b7686e4ecf8d2c",
+  "generated": "2026-10-28T11:06:29Z",
+  "pack_sha": "51739d5e69b3aa815ffc17428f5ac7817dbaa81fe07124b645af4c15f3a7152b",
   "creatures": [
     {
       "name": "kindling",
@@ -23,9 +23,9 @@
       "name": "pixie",
       "blurb": "helper, no cloud",
       "url": "https://github.com/ElegantVW/pixie",
-      "commit": "fix: prevent busy-spin in less-safe askpass server",
-      "date": "2026-10-28T10:40:58Z",
-      "sha": "0e09393"
+      "commit": "fix: avoid holding seat lock across write in askpass server",
+      "date": "2026-10-28T10:57:15Z",
+      "sha": "98e1be5"
     },
     {
       "name": "magpie",
