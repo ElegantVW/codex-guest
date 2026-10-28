@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated": "2026-10-28T11:27:49Z",
-  "pack_sha": "82947b1884f694454144389926f95d0a400ebc71af12c8397c34034cbee83384",
+  "generated": "2026-10-28T11:49:29Z",
+  "pack_sha": "b6b61a3dad9a6ce7f760e25bd2e259d4f72c557fced570ff5834395fba3eec7f",
   "creatures": [
     {
       "name": "kindling",
@@ -23,9 +23,9 @@
       "name": "pixie",
       "blurb": "helper, no cloud",
       "url": "https://github.com/ElegantVW/pixie",
-      "commit": "fix: restore read in askpass server",
-      "date": "2026-10-28T11:21:35Z",
-      "sha": "d3e8e61"
+      "commit": "fix: use nonblocking server again",
+      "date": "2026-10-28T11:47:37Z",
+      "sha": "c77a291"
     },
     {
       "name": "magpie",
