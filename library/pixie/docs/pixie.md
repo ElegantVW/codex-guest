@@ -2,14 +2,15 @@
 
 **Role:** Local AI familiar with tools (files, shell, house spells), fully offline. `pixie` / `pixie "…"`; llama-server on `127.0.0.1:8080` via `menagerie`.
 
-**Status:** Rust engine (v0.3.1). Python `bin/pixie` retired. Menagerie / ask / imp stay Python in this pass.
+**Status:** Rust engine (v0.3.3). Python `bin/pixie` retired. Menagerie / ask / imp stay Python in this pass.
 
 ## Current
 
 - Engine: Rust ELF `~/.local/lib/faeos/pixie`, thin launcher `~/bin/pixie`. Build: `./build.sh install --house`.
 - Model: Huihui Qwen3-8B abliterated v2 Q4_K_M on this box (menagerie). Live mouth is GPU (`-ngl 99`), ctx **16384**. Native GGUF window is 40k.
-- Bare `pixie` opens a **dashboard** after the splash: house star, New / Options, every named thread with a kur one-liner. `r` rename, `d` delete. Esc on an empty prompt returns home; **C-q** quits. `pixie --new` / `-n` and `--resume [id]` skip the home screen. **C-s** still lists chats in-thread. The 8B wakes when you enter a thread. Title bar shows a grok-style meter of the 24k prompt window (compact at 70%). Tool-loop guard is 64 rounds per turn.
-- Options **Sudo** is a sitting: RAM secret or a live ticket, never written to disk. Confirm still gates `execute_bash`. Path gate stays for file tools.
+- Bare `pixie` holds the house-star splash until `menagerie ensure pixie` succeeds, then the dashboard. Failure stays on a loading line and retries. `r` rename, `d` delete. Esc on an empty prompt returns home; **C-q** quits. `pixie --new` / `-n` and `--resume [id]` skip the home screen after wake. Title bar shows a grok-style meter of the 24k prompt window (compact at 70%). Tool-loop guard is 64 rounds per turn.
+- Options **Role** chat/code/vision hops the GPU (one tenant). **Sudo** is a sitting: RAM secret or a live ticket, never written to disk. Confirm still gates `execute_bash`, mail/WhatsApp writes, and `generate_image`. Path gate stays for file tools.
+- Chat `check_mail` / `check_whatsapp` rows carry `date` and `age`. Quiet bubbles are human lines. Host card carries `now:`. Never `wacli sync --follow`.
 - File tools canonicalize the home directory and the nearest existing path ancestor before authorizing a target, so a new file under an external symlink is refused. The gate fails closed if `HOME` is missing or relative.
 - Shell commands run in their own process group. Timeout and cancellation stop the group; the group is also closed after its leader exits so orphaned descendants cannot hold session output open.
 - Preferences and session metadata are replaced atomically. Invalid preference JSON prevents startup with a clear error, and memory/session persistence failures are reported. LLM checks and requests reject malformed `PIXIE_LLM_HOST` / `PIXIE_LLM_PORT` instead of probing the default address.

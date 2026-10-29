@@ -1,5 +1,15 @@
 # Pixie changelog
 
+## v0.3.3 kitchen, time, hop (2026-10-29)
+
+- Splash holds the star until `menagerie ensure pixie` succeeds. Failure stays on a loading line and retries; it does not open the dashboard.
+- Options Sudo sitting no longer deadlocks after password (one seat lock; `enable_sitting`; `SudoReady`).
+- Host card carries local `now:` and the resident mouth. Mail and WhatsApp rows carry `date` + `age`.
+- Chat `check_whatsapp` (wacli JSON, never `--follow`) and a full `check_mail` kitchen. Quiet bubbles are human lines. Writes confirm-gated.
+- `generate_image` hops the GPU: park Pixie, Imp image hand, restore Pixie.
+- Build inspects the named house tree; 32 rounds. Options Role chat/code/vision.
+- House pack cap 4000. Wacli in the context pack.
+
 ## v0.3.2 safer house boundaries (2026-10-26)
 
 - File tools resolve existing path ancestors before checking the home boundary, including new descendants beneath symlinks; missing or relative `HOME` is rejected instead of widening access.
