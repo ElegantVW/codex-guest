@@ -1,5 +1,11 @@
 # Pixie changelog
 
+## v0.3.13 design on Vulkan, vibe as the fast tongue (2026-10-30)
+
+- Park CrispASR 0.8.48 **vulkan** at `~/.local/lib/crispasr-vulkan/`. CPU tarball stays. Design prefers GPU; `--no-gpu` only on the CPU guest. Fallback if vulkan missing or bind fails.
+- Tongue **vibe**: VibeVoice Realtime 0.5B (`vibevoice-tts` + explicit Q4_K + Emma pack). Never `-m auto`. Options cycle off / vivian / design / vibe. Default stays design.
+- Measure a short clause on this 5700 XT before calling RTF a win.
+
 ## v0.3.12 speak the intro, skip the sparkles (2026-10-30)
 
 - `check_whatsapp` `norm_args` keeps `caption`/`path`/`file`. `send_voice` speaks that caption. Confirm names the caption or “last speech”. Last wav only when caption/text/path are empty.
