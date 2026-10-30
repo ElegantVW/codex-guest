@@ -1,5 +1,13 @@
 # Pixie changelog
 
+## v0.3.4 forge, human cards, fairy voice (2026-10-30)
+
+- `generate_image` forges a PNG with sd-cli after hopping the GPU. Best hand on this 8 GB card is SDXL Q8 at 1024, 28 steps, cfg 7, dpm++2m; turbo (512/4/euler) only if SDXL is missing.
+- Confirm names the hop and the save folder. Options **Enhance** and **Art** (default `~/pixie_art`). The 8B braids a richer prompt after you approve, while she is still on the card.
+- Chat paints the picture as half-block pixels, then Pixie's reply. C-o opens a viewer. Busy prompt shows phase + timer (`braiding` / `parking` / `forging` / `waking`).
+- Tool cards use human titles (`mail`, `whatsapp`, `forge`, `shell`) with green/red borders. Quiet body is the story, not the tool name twice.
+- PERSONA lets the 8B answer in her own voice. Tool turns stay exact JSON.
+
 ## v0.3.3 kitchen, time, hop (2026-10-29)
 
 - Splash holds the star until `menagerie ensure pixie` succeeds. Failure stays on a loading line and retries; it does not open the dashboard.
