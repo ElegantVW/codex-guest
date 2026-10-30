@@ -1,5 +1,11 @@
 # Pixie changelog
 
+## v0.3.8 real pictures, clips, eye (2026-10-30)
+
+- Image bubbles paint the real PNG through kitty's graphics protocol (unicode placeholders, Magpie's framing). TTY fallback is unlabeled half-blocks.
+- **C-u** suspends Pixie and opens Spellbook `--pick` to clip a file. Paste of a home path or `file://` URI clips too. Images land on the you-bubble; UTF-8 text is excerpted (24k); other kinds say they cannot be seen yet.
+- `look` hops the GPU: park the 8B, `menagerie ensure pixie --slot vision` with `--mmproj`, OpenAI `image_url`, restore `--slot chat`. Attached pictures are looked once before the 8B speaks. Tests never hop. Missing mmproj stays an honest sleep.
+
 ## v0.3.7 sharper picture, speak after hop (2026-10-30)
 
 - Image bubble is 72×32 half-blocks with Lanczos, not 56×18 Triangle.
