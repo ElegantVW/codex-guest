@@ -1,5 +1,15 @@
 # Pixie changelog
 
+## v0.3.7 sharper picture, speak after hop (2026-10-30)
+
+- Image bubble is 72×32 half-blocks with Lanczos, not 56×18 Triangle.
+- `/health` 503 (llama still loading) is no longer treated as ready. Hop waits up to 60s for 200. Empty post-tool rounds retry, then nudge her to speak.
+
+## v0.3.6 forge matches Imp (2026-10-30)
+
+- White canvases were extra sd-cli flags, not Red vs Rust. Imp's working command is `LD_LIBRARY_PATH=$HOME/.local/lib/sd sd-cli -m GGUF -p PROMPT -W -H --steps --cfg-scale --seed -1 -o`. Pixie had been passing `--rng cpu`, `--offload-to-cpu`, `--backend te=cpu,vae=cpu`, `dpm++2m`, and sidecar CLIP/VAE files. Imp uses CUDA RNG and `euler_a` defaults, GGUF only, SDXL 1024 / 20 / cfg 7.
+- Imp's art path is still Red + sd-cli. The launcher uses a few lines of Python only to read menagerie.json.
+
 ## v0.3.5 forge RNG, ask the braid (2026-10-30)
 
 - sd-cli on this AMD card uses `--rng cpu` / `--sampler-rng cpu`. Default CUDA RNG painted a 1024 white canvas.
