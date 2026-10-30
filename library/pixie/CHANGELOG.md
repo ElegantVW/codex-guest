@@ -1,5 +1,11 @@
 # Pixie changelog
 
+## v0.3.5 forge RNG, ask the braid (2026-10-30)
+
+- sd-cli on this AMD card uses `--rng cpu` / `--sampler-rng cpu`. Default CUDA RNG painted a 1024 white canvas.
+- First confirm says she will braid the wish. After the 8B expands it, a second confirm shows the prompt (`paint this?`). `n` keeps your words.
+- Hop waits until the mouth answers again so the Pixie bubble can follow the picture. Blank PNGs are an error. Image cards stay human even with verbose on.
+
 ## v0.3.4 forge, human cards, fairy voice (2026-10-30)
 
 - `generate_image` forges a PNG with sd-cli after hopping the GPU. Best hand on this 8 GB card is SDXL Q8 at 1024, 28 steps, cfg 7, dpm++2m; turbo (512/4/euler) only if SDXL is missing.
