@@ -6,12 +6,12 @@ RSS: https://raw.githubusercontent.com/ElegantVW/codex-guest/main/feed.xml
 
 Codex is a studio window: download the exe. Now / Lately / Next. RSS if you only want headlines.
 
+- **magpie** — readme: Look glyph; house GPU off the first screen (2026-10-31) · [sourced manuals](https://github.com/ElegantVW/magpie)
+- **siren** — readme: waves glyph under the title (2026-10-31) · [plays your music](https://github.com/ElegantVW/siren)
+- **grove** — grove: Menagerie card — the steward (2026-10-31) · [the front door](https://github.com/ElegantVW/grove)
 - **pixie** — pixie 0.3.15: Auto hears Message yourself (2026-10-31) · [helper, no cloud](https://github.com/ElegantVW/pixie)
-- **grove** — grove: Pixie card covers WhatsApp away (2026-10-31) · [the front door](https://github.com/ElegantVW/grove)
 - **scroll** — chore: add kilo config (2026-10-27) · [house book](https://github.com/ElegantVW/scroll)
 - **faeOS** — crystal: unify WM overlays (picom/fae-wm) under crystal TUI frame (2026-10-27) · [pink house, offline](https://github.com/ElegantVW/faeOS)
-- **siren** — feat(siren): add HEOS JSON support and improve playback robustness (2026-10-26) · [plays your music](https://github.com/ElegantVW/siren)
-- **magpie** — fix format! escape in bullet prompt; checkable-bullets rule now compiles (2026-10-11) · [sourced manuals](https://github.com/ElegantVW/magpie)
 - **kur** — Pond ripple: async speak, listening spinner, one-ripple-at-a-time (2026-10-11) · [haiku only](https://github.com/ElegantVW/kur)
 - **bulwark** — CHANGELOG: release entry (2026-10-11) · [lock and guard](https://github.com/ElegantVW/bulwark)
 - **imp** — CHANGELOG: release entry (2026-10-11) · [art from a wish](https://github.com/ElegantVW/imp)

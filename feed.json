@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated": "2026-10-31T00:32:53Z",
-  "pack_sha": "0679f99a9a8c7028332fa577d95118ed783cdafdbd63de47589825b56b49664f",
+  "generated": "2026-10-31T00:56:37Z",
+  "pack_sha": "aea8e8f41d4503593b53fb62487d2a1f2981f032064a5ffdc6a2271e9660654a",
   "creatures": [
     {
       "name": "kindling",
@@ -31,17 +31,17 @@
       "name": "magpie",
       "blurb": "sourced manuals",
       "url": "https://github.com/ElegantVW/magpie",
-      "commit": "fix format! escape in bullet prompt; checkable-bullets rule now compiles",
-      "date": "2026-10-11T18:48:24+01:00",
-      "sha": "a64f2e8"
+      "commit": "readme: Look glyph; house GPU off the first screen",
+      "date": "2026-10-31T00:38:26Z",
+      "sha": "6c00581"
     },
     {
       "name": "siren",
       "blurb": "plays your music",
       "url": "https://github.com/ElegantVW/siren",
-      "commit": "feat(siren): add HEOS JSON support and improve playback robustness",
-      "date": "2026-10-26T22:34:55Z",
-      "sha": "d4ccb5c"
+      "commit": "readme: waves glyph under the title",
+      "date": "2026-10-31T00:38:26Z",
+      "sha": "3091ae6"
     },
     {
       "name": "goblin",
@@ -103,9 +103,9 @@
       "name": "grove",
       "blurb": "the front door",
       "url": "https://github.com/ElegantVW/grove",
-      "commit": "grove: Pixie card covers WhatsApp away",
-      "date": "2026-10-31T00:28:05Z",
-      "sha": "6775ca3"
+      "commit": "grove: Menagerie card — the steward",
+      "date": "2026-10-31T00:38:26Z",
+      "sha": "438f219"
     }
   ],
   "files": [

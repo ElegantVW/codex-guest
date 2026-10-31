@@ -8,6 +8,10 @@ Status: producer of cited PDF manuals — `seek` crawls, `process` files with lo
 
 For: researchers/students needing a thorough cited PDF. Not for: Google-speed answers, offline boxes with no network/models.
 
+Grove: [elegantvw.github.io/grove/#app-magpie](https://elegantvw.github.io/grove/#app-magpie).
+
+## Look
+
 ```
   /\
  (\/)
@@ -16,23 +20,12 @@ For: researchers/students needing a thorough cited PDF. Not for: Google-speed an
 \    /
 ```
 
-## GPU
+```
+git clone git@github.com:ElegantVW/magpie.git ~/magpie
+cd ~/magpie && ./build.sh install --house
+```
 
-llama.cpp is built with Vulkan (`~/.local/src/llama.cpp`, headers in
-`~/.local/vulkan-deps`). The server lives at
-`~/.local/lib/llama-vulkan/` (`llama-server-vk` wrapper sets
-`LD_LIBRARY_PATH`); the stock `~/bin/llama-server` is untouched.
-The magpie slot runs `qwen3-4b` with GPU inference through menagerie
-(`menagerie backend magpie gpu` → house Vulkan server + full offload;
-`cpu` for the stock fallback). Backend is per-creature steward business —
-magpie passes no GPU env of its own (an env override once masked a
-CPU-started slot for a week because ensure is a no-op when healthy).
-Per-entry latency follows server speed; budgets cover bad days (600s LLM
-round-trips), and failures log to stderr, never silent.
-`process` passes that env on every `ensure`, so the slot self-heals
-GPU-backed across evictions. Opt out with `MAGPIE_GPU=0`.
-Switch models with `menagerie set magpie <name>`; pick the app with
-`MAGPIE_LLM_APP=<app>`.
+Local mouth is [Menagerie](https://github.com/ElegantVW/menagerie)'s job. House GPU notes: [`docs/seek.md`](docs/seek.md).
 
 ## Use
 
