@@ -1,8 +1,8 @@
 ![faeOS hero](assets/hero/faeos.svg)
 
-# faeOS — the pink house 🌸
+# faeOS — Grove's kit 🌸
 
-Homepage (front door): `https://elegantvw.github.io/grove/` — this repo is the kit it serves.
+Spoken name **Grove**. This GitHub repo is still `faeOS` until a later rename. Front door: `https://elegantvw.github.io/grove/`. Engine binaries still install to `~/.local/lib/faeos/`.
 
 A pink, **offline-first** terminal ecosystem: framed status prompt, local **Pixie** agent (llama.cpp), **Siren** media player, **Kur** haiku bard, **Scry** history, **Ether** network weaves, **Magpie** privacy search — all wrapped in a cute fae-colored status box.
 

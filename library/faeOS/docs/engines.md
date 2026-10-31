@@ -1,6 +1,7 @@
 # Engines — plug-and-play build contract
 
-faeOS is a **source-only** kit: scripts, configs, and thin launchers in git.
+Grove's kit (GitHub: **faeOS**) is **source-only**: scripts, configs, and thin launchers in git.
+A later `grove-kit` rename is a separate cut. Paths below stay `faeos` so today's installs keep working.
 Heavy Rust binaries are **built on the machine**, never committed.
 
 This page is the canonical integration contract for:
