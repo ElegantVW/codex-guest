@@ -1,6 +1,6 @@
-# Scroll — living book 📜
-
 ![Scroll hero](assets/hero/scroll.svg)
+
+# Scroll — the house book 📜
 
 > **one page per app, Tab teaches Grove — the last leaf opens PATH**
 

@@ -1,6 +1,6 @@
 ![Magpie hero](assets/hero/magpie.svg)
 
-# Magpie — thorough seeker
+# Magpie — the manual 🔎
 
 Rust engine for [faeOS](https://github.com/ElegantVW/faeOS). One binary: TUI + seek + PDF. Privacy-first: DDG + Marginalia, never Google. Thorough by default: many various sources, never wikipedia-only.
 

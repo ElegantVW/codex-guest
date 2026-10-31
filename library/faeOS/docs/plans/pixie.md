@@ -2,7 +2,7 @@
 
 **Role:** Local AI familiar with tools (files, shell, house spells), fully offline. `pixie` / `pixie "…"`; llama-server on `127.0.0.1:8080` via `menagerie`.
 
-**Status:** Rust engine (v0.3.1). Canonical living plan: `~/pixie/docs/pixie.md`. Python `bin/pixie` retired. Menagerie / ask / imp stay Python in this pass.
+**Status:** Rust engine (v0.3.15). Canonical living plan: `~/pixie/docs/pixie.md`. Python `bin/pixie` retired. Menagerie / ask / imp stay Python in this pass.
 
 ## Current
 
@@ -17,7 +17,8 @@
 - File cards: green `+` / red `−` on writes; `l` look · `o` open · `[` `]` cycle files.
 - Host card every turn (`/etc/os-release`, package manager). House pack in `config/pixie/context/`.
 - Barge-in: type + Enter aborts the in-flight reply. `v` verbose (think + tools). Quiet hides `<think>` but jsonl stores it.
-- `look` stub: eye still sleeping (vision Pass 2).
+- `look` hops to a local vision mouth (one GPU tenant). Missing mmproj keeps the eye asleep.
+- Options **Auto** (`pixie --auto`) covers WhatsApp while the TUI is gone. Message yourself is the house test. `pixie --self-test` proves the filter with no WhatsApp.
 - `menagerie ensure pixie` on demand. Quit keeps the server warm unless `PIXIE_STOP_LLM_ON_EXIT=1`.
 
 ## Files

@@ -1,6 +1,6 @@
 ![Imp hero](assets/hero/imp.svg)
 
-# Imp — terminal art dragon 🐲
+# Imp — the art dragon 🐲
 
 > **a grumpy dragon that paints terminal art from a wish — and mocks it**
 

@@ -1,6 +1,6 @@
 ![Mourama hero](assets/hero/mourama.svg)
 
-# Mourama 🏔️
+# Mourama — the hillfort 🏔️
 
 > Status: pre-alpha, world offline. Free, open-source online game — not playable yet.
 > We have no server/host box/domain. Looking for someone to invest in a small host + domain for a closed 5-seat alpha: `evenweaker@disroot.org` subject `host: mourama`.

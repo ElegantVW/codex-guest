@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated": "2026-10-31T00:10:37Z",
-  "pack_sha": "f2bb71b61cf2b54936443b11a7b29e2c0bada527a460e6880f59a0d21c8eb4e5",
+  "generated": "2026-10-31T00:32:53Z",
+  "pack_sha": "0679f99a9a8c7028332fa577d95118ed783cdafdbd63de47589825b56b49664f",
   "creatures": [
     {
       "name": "kindling",
@@ -23,9 +23,9 @@
       "name": "pixie",
       "blurb": "helper, no cloud",
       "url": "https://github.com/ElegantVW/pixie",
-      "commit": "fix: use nonblocking server again",
-      "date": "2026-10-28T11:47:37Z",
-      "sha": "c77a291"
+      "commit": "pixie 0.3.15: Auto hears Message yourself",
+      "date": "2026-10-31T00:28:05Z",
+      "sha": "d08257e"
     },
     {
       "name": "magpie",
@@ -103,9 +103,9 @@
       "name": "grove",
       "blurb": "the front door",
       "url": "https://github.com/ElegantVW/grove",
-      "commit": "grove: Codex card drinks the studio feed",
-      "date": "2026-10-24T17:59:03+01:00",
-      "sha": "10366c5"
+      "commit": "grove: Pixie card covers WhatsApp away",
+      "date": "2026-10-31T00:28:05Z",
+      "sha": "6775ca3"
     }
   ],
   "files": [

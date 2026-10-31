@@ -1,6 +1,6 @@
 ![faeOS hero](assets/hero/faeos.svg)
 
-# FaeOS 🌸
+# faeOS — the pink house 🌸
 
 Homepage (front door): `https://elegantvw.github.io/grove/` — this repo is the kit it serves.
 
