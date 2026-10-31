@@ -6,9 +6,9 @@ RSS: https://raw.githubusercontent.com/ElegantVW/codex-guest/main/feed.xml
 
 Codex is a studio window: download the exe. Now / Lately / Next. RSS if you only want headlines.
 
+- **grove** — grove: Request work, no pay buttons, Codex feed that fails loud (2026-10-31) · [the front door](https://github.com/ElegantVW/grove)
 - **magpie** — readme: Look glyph; house GPU off the first screen (2026-10-31) · [sourced manuals](https://github.com/ElegantVW/magpie)
 - **siren** — readme: waves glyph under the title (2026-10-31) · [plays your music](https://github.com/ElegantVW/siren)
-- **grove** — grove: Menagerie card — the steward (2026-10-31) · [the front door](https://github.com/ElegantVW/grove)
 - **pixie** — pixie 0.3.15: Auto hears Message yourself (2026-10-31) · [helper, no cloud](https://github.com/ElegantVW/pixie)
 - **scroll** — chore: add kilo config (2026-10-27) · [house book](https://github.com/ElegantVW/scroll)
 - **faeOS** — crystal: unify WM overlays (picom/fae-wm) under crystal TUI frame (2026-10-27) · [pink house, offline](https://github.com/ElegantVW/faeOS)

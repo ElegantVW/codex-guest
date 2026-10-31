@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated": "2026-10-31T00:56:37Z",
-  "pack_sha": "aea8e8f41d4503593b53fb62487d2a1f2981f032064a5ffdc6a2271e9660654a",
+  "generated": "2026-10-31T00:58:40Z",
+  "pack_sha": "a41db695849b9916e9595727f491cf62380a5dd378491c2f74cfd1e0b452f892",
   "creatures": [
     {
       "name": "kindling",
@@ -103,9 +103,9 @@
       "name": "grove",
       "blurb": "the front door",
       "url": "https://github.com/ElegantVW/grove",
-      "commit": "grove: Menagerie card — the steward",
-      "date": "2026-10-31T00:38:26Z",
-      "sha": "438f219"
+      "commit": "grove: Request work, no pay buttons, Codex feed that fails loud",
+      "date": "2026-10-31T00:58:33Z",
+      "sha": "d4f450f"
     }
   ],
   "files": [
