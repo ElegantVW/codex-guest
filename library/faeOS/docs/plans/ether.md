@@ -4,6 +4,11 @@
 
 **Status:** stable
 
+## Implementation
+- The engine is the Rust crate in `ether/`; `bin/ether` is the public shell launcher.
+- Build offline with `cd ether && ./build.sh`. Use `./build.sh install` only when intentionally installing to `~/.local/lib/faeos/`.
+- The launcher preserves multi-call invocation names (`whisper`, `listen`, and `status`) when invoked through matching symlinks.
+
 ## Current
 - `ether` — TUI: w/l weave, s scan (top 5), n new, d remove, R restart (soft/sudo), r refresh, q quit
 - `ether status` — one-shot report (bt/wifi/lan)

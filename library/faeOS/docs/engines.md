@@ -13,7 +13,7 @@ This page is the canonical integration contract for:
 | **Fairy Lantern** | `ElegantVW/fairy-lantern` → `~/fairy-lantern` | `fairy` / `fairy-lantern` |
 | **Hearth** | in-tree `faeos/hearth` (incomplete) | `hearth` |
 | **Rift** | in-tree `faeos/rift` (incomplete) | `rift` |
-| **Ether** | in-tree `faeos/ether` | `ether` / `whisper` / `listen` / `status` |
+| **Ether** | in-tree Rust crate `faeos/ether` | `ether` / `whisper` / `listen` / `status` |
 | **Pixie** | `ElegantVW/pixie` → `~/pixie` | `pixie` |
 | **Spellbook** | `ElegantVW/spellbook` → `~/spellbook` | `spellbook` |
 

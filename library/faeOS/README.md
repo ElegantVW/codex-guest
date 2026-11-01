@@ -38,7 +38,7 @@ git clone git@github.com:ElegantVW/faeOS.git ~/faeos
 cd ~/faeos
 chmod +x install.sh
 ./install.sh --with-libs
-# optional: compile greeter/terminal crates
+# optional: build in-tree Rust engines (including Ether)
 # ./install.sh --build
 exec zsh
 ```
