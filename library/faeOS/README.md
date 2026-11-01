@@ -79,7 +79,7 @@ cd ~/faeos && ./install.sh --build --build-engines
 | `goblin` | Mail spirit — interactive TUI, aerc IMAP → local text |
 | `goblin steal` | New letters (IMAP → local text); `goblin watch` = instant push (IDLE) + 5-min safety net |
 | `faectl` | FaeOS control panel (status / restart-llm) |
-| `ether net` / `ether veil [on\|off]` / `ether bridge` | Connectivity / VPN / phone-hotspot boot fallback |
+| `ether net` / `ether link` / `ether veil [on\|off]` / `ether bridge` / `ether ap` | Connectivity, paths, VPN, phone bridge, and house AP |
 | `ether` | Live TUI: bluetooth · wifi · lan |
 | `status ether` | One-shot report: bluetooth · wifi · lan |
 | `scry` / Shift-Tab | Command + output history (visions) |

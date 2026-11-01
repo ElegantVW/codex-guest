@@ -13,6 +13,7 @@ This page is the canonical integration contract for:
 | **Fairy Lantern** | `ElegantVW/fairy-lantern` → `~/fairy-lantern` | `fairy` / `fairy-lantern` |
 | **Hearth** | in-tree `faeos/hearth` (incomplete) | `hearth` |
 | **Rift** | in-tree `faeos/rift` (incomplete) | `rift` |
+| **Ether** | in-tree `faeos/ether` | `ether` / `whisper` / `listen` / `status` |
 | **Pixie** | `ElegantVW/pixie` → `~/pixie` | `pixie` |
 | **Spellbook** | `ElegantVW/spellbook` → `~/spellbook` | `spellbook` |
 
@@ -26,7 +27,7 @@ This page is the canonical integration contract for:
 
 ## Discovery order (every launcher)
 
-1. Env override: `BULWARK_BIN`, `FAIRY_BIN`, `SEAL_BIN`, `HEARTH_BIN`, `RIFT_BIN`, `PIXIE_BIN`, `SPELLBOOK_BIN`
+1. Env override: `BULWARK_BIN`, `FAIRY_BIN`, `SEAL_BIN`, `HEARTH_BIN`, `RIFT_BIN`, `ETHER_BIN`, `PIXIE_BIN`, `SPELLBOOK_BIN`
 2. `~/.local/lib/faeos/<name>`
 3. Sibling / known release tree (e.g. `~/bulwark/target/release/bulwark`)
 4. Clear error with a one-line build hint (exit 127)
@@ -52,6 +53,7 @@ cd ~/faeos && ./install.sh --build
 # or individually:
 #   cd ~/faeos/hearth && ./build.sh install
 #   cd ~/faeos/rift && ./build.sh install
+#   cd ~/faeos/ether && ./build.sh install
 ```
 
 Or, if sibling engine trees already exist:
