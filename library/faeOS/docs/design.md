@@ -14,6 +14,7 @@ Pink, pastel, rounded crystal frames — one house look for TUIs and standalones
 - **ASCII** fallback for kmscon: `+-- * title * --+`.
 - Palette: `fae_termart.Palette` (256-color pinks) + `config/palette.env` for X/kitty.
 - Shared Python layer: `bin/fae_termart.py` — `box`, `panel`, `split_row`, `tui_*`, mouse HitMap.
+- Rust TUIs should mirror the shared palette and frame contract. In raw mode, emit CRLF row endings or position each row explicitly; LF alone does not reset the cursor column.
 
 ## Terminal first (product principle)
 

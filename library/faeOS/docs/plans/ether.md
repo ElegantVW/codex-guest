@@ -9,6 +9,9 @@
 - Build offline with `cd ether && ./build.sh`. Use `./build.sh install` only when intentionally installing to `~/.local/lib/faeos/`.
 - The launcher preserves multi-call invocation names (`whisper`, `listen`, and `status`) when invoked through matching symlinks.
 - `nether` is an opt-in test entry point: it runs the in-tree Rust source via offline Cargo with an isolated target cache, without replacing `ether`.
+- Ether uses the shared Grove palette/frame language; ASCII chrome is the default, with rounded Unicode enabled by `PIXIE_UNICODE=1`.
+- The live TUI writes explicit CRLF row endings while raw mode is active to keep panels aligned in Kitty and kmscon.
+- The live TUI uses the compact card stack and framed `runes` footer; the one-shot status report retains the full-width Ether title banner.
 
 ## Current
 - `ether` — TUI: w/l weave, s scan (top 5), n new, d remove, R restart (soft/sudo), r refresh, q quit
