@@ -81,6 +81,7 @@ cd ~/faeos && ./install.sh --build --build-engines
 | `faectl` | FaeOS control panel (status / restart-llm) |
 | `ether net` / `ether link` / `ether veil [on\|off]` / `ether bridge` / `ether ap` | Connectivity, paths, VPN, phone bridge, and house AP |
 | `ether` | Live TUI: bluetooth · wifi · lan |
+| `nether` | Opt-in Rust Ether test launcher; does not replace `ether` |
 | `status ether` | One-shot report: bluetooth · wifi · lan |
 | `scry` / Shift-Tab | Command + output history (visions) |
 | `zen` | Fullscreen browser break (X one-shot / VT) |
