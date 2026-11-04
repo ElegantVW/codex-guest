@@ -13,7 +13,7 @@ This page is the canonical integration contract for:
 | **Fairy Lantern** | `ElegantVW/fairy-lantern` → `~/fairy-lantern` | `fairy` / `fairy-lantern` |
 | **Hearth** | in-tree `faeos/hearth` (incomplete) | `hearth` |
 | **Rift** | in-tree `faeos/rift` (incomplete) | `rift` |
-| **Ether** | in-tree Rust crate `faeos/ether` | `ether` / `whisper` / `listen` / `status` |
+| **Ether** | `~/ether` (ElegantVW/ether when published) | `ether` / `whisper` / `listen` / `status` |
 | **Pixie** | `ElegantVW/pixie` → `~/pixie` | `pixie` |
 | **Spellbook** | `ElegantVW/spellbook` → `~/spellbook` | `spellbook` |
 
@@ -53,7 +53,7 @@ cd ~/faeos && ./install.sh --build
 # or individually:
 #   cd ~/faeos/hearth && ./build.sh install
 #   cd ~/faeos/rift && ./build.sh install
-#   cd ~/faeos/ether && ./build.sh install
+#   cd ~/ether && ./build.sh install --house
 ```
 
 Or, if sibling engine trees already exist:
@@ -77,7 +77,7 @@ cd ~/faeos && ./install.sh --build --build-engines
 | Seal | X11 + PAM stack | lock face cannot grab/auth |
 | Pixie stack | `*.gguf` models on disk | every app refuses; installer warns |
 | Kur | menagerie (mind :8081) + kur-server (pen :8083) | quiet pen; `./install.sh --with-menagerie` fetches the mind |
-| Siren | mpv (local); follow needs speaker LAN + `:8899`; Ether writes `~/.config/ether/heos.json` | installer warns; cast needs LAN HEOS + minidlna |
+| Siren | mpv (local); follow needs speaker LAN + `:8899`; HEOS via `siren heos` | installer warns; cast needs LAN HEOS + minidlna |
 | Goblin | TLS network; OS keyring or `0600` secrets file | summon guides; never in JSON/logs |
 | Fairy Lantern | `pw-cat` or `aplay`; user-supplied ROMs | sine fallback; no ROMs in git |
 | Mourama | LAN/Tailscale; `:4747` stays off the internet | single-player against yourself |
