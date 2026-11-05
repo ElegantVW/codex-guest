@@ -78,12 +78,22 @@ validates and prints what it loaded.
 - **Remembered bugs, encoded:** rotate-don't-resort, append-don't-prepend,
   Esc-never-commits, stacking-is-not-recency (moot inside, kept as comments).
 
+## Dual head
+
+`fae-display` (from `.xinitrc` and autostart) makes HDMI-1 primary and
+places every other connected output `--right-of` it. Super+1…0 switches
+**both** screens. Each desk has one tile tree per monitor. The dock lives
+on the primary (HP 24f). Fullscreen and games take the panel they are on.
+Super+hjkl can cross the bezel; Super+Shift+hjkl sends a window across.
+Super+h names the keys. Independent workspaces per output are a later cut.
+
 ## Known gaps (v1)
 
 - No titlebars (borders only). No tabbed/stacked/scratchpad/marks.
 - `fae-cycle` speaks i3-msg and stays an i3-session tool; the built-in
   switcher covers its job here.
 - Withdrawn (minimized) windows are forgotten until remapped.
+- No independent workspaces per output.
 
 ## Dock
 
