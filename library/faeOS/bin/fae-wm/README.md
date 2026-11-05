@@ -97,9 +97,9 @@ Super+h names the keys. Independent workspaces per output are a later cut.
 
 ## Dock
 
-Bottom-center **starship capsule**: pink glass stadium with circular wells.
-Top band is `✦ user ✦ · HH:MM · RAM · CPU · HDD · temp`. Wells hold the
-whole house sigil, scaled to fit. Footer is music, unread mail, focused
-window. Hover lifts a well. Width follows the icons; status ellipsizes.
-`Super+=` / `Super+-` size. `make test` is hotspot/dwell/scale/fit.
-Log out after `make install`.
+The overlays and dock share the house starship box: rose Unicode frame,
+pink title, plum fill, and pale body text. The bottom-center shelf keeps
+round wells inside the frame, with status above and music/mail/focus below.
+Hover lifts a well; width follows the icons while the title rule keeps a
+minimum width. `Super+=` / `Super+-` size. `make test` covers hotspot/dwell,
+scale, fit, and box geometry. Log out after `make install`.
