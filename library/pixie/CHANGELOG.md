@@ -1,5 +1,11 @@
 # Pixie changelog
 
+## v0.3.16 dual Auto + Bay (2026-11-05)
+
+- Options splits Auto into **Carreira** and a shop row (label from `~/.config/pixie/auto-contacts.toml`, mode 0600). Either flag starts `pixie-auto.service`. Other DMs stay silent.
+- Shop first ping is a numbered menu: 1 local Pixie, 2 house search (`keep-bay`, no model), 3 Grok queue (`~/.cache/keep/korda-inbox.jsonl`). Lookup-shaped texts (aperto, torque, Nm, parafuso, fluido, óleo, procedimento) skip the menu and hit Bay. Bay never invents a number.
+- Message yourself still works for house tests. Shop Auto needs `shop.wacli` in the local toml. Live JIDs stay off git.
+
 ## v0.3.15 Auto self-chat (2026-10-31)
 
 - Auto keeps Gil's **Message yourself** notes (`FromMe` + linked account). Messages he sends to other people stay skipped. Auto's own sends are recorded so self-chat cannot loop.
