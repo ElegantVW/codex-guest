@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated": "2026-11-06T02:50:54Z",
-  "pack_sha": "546e01412de592c6723fad1613fc999147cbaee493453598b6efe8cc88940ccc",
+  "generated": "2026-11-06T03:11:19Z",
+  "pack_sha": "7485f90bd724b91d6b52c0449c3f92a28636ee7d07c00cb8d757165628967115",
   "creatures": [
     {
       "name": "kindling",
@@ -23,9 +23,9 @@
       "name": "pixie",
       "blurb": "helper, no cloud",
       "url": "https://github.com/ElegantVW/pixie",
-      "commit": "pixie 0.3.15: Auto hears Message yourself",
-      "date": "2026-10-31T00:28:05Z",
-      "sha": "d08257e"
+      "commit": "pixie 0.3.19: Auto echo ledger and priority contacts",
+      "date": "2026-11-06T02:59:57Z",
+      "sha": "9cea289"
     },
     {
       "name": "magpie",
@@ -87,9 +87,9 @@
       "name": "scroll",
       "blurb": "house book",
       "url": "https://github.com/ElegantVW/scroll",
-      "commit": "chore: add kilo config",
-      "date": "2026-10-27T22:09:53Z",
-      "sha": "c874cd0"
+      "commit": "pixie lesson: Options Auto covers WhatsApp",
+      "date": "2026-11-06T03:03:59Z",
+      "sha": "e0cb3a9"
     },
     {
       "name": "faeOS",

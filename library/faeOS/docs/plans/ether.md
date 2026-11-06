@@ -9,7 +9,7 @@
 - Canonical crate: `~/ether`. ELF: `~/.local/lib/faeos/ether`. Public command: `ether` (thin launcher `~/bin/ether`).
 - `./build.sh install --house` from `~/ether` is the only writer of that ELF. `faeOS/ether` is a retired kit tree and must not overwrite it.
 - The launcher execs the ELF for every verb. No Python `ether-face`. Multi-call names (`whisper`, `listen`, `status`) ride `ETHER_INVOKED_AS`.
-- `nether` is an alias to the same ELF.
+- `nether` is an alias to the same house ELF (`~/bin/nether` execs `~/.local/lib/faeos/ether`). It must never `cargo run` `~/faeOS/ether`.
 - Wisp stays a separate creature that execs this ELF for `ap` / `bt` and Siren for HEOS.
 - Unicode chrome default: `PIXIE_UNICODE=1`. Sitting TUI keeps alt-screen + CRLF row endings.
 

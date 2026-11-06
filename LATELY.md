@@ -6,11 +6,11 @@ RSS: https://raw.githubusercontent.com/ElegantVW/codex-guest/main/feed.xml
 
 Codex is a studio window: download the exe. Now / Lately / Next. RSS if you only want headlines.
 
+- **scroll** — pixie lesson: Options Auto covers WhatsApp (2026-11-06) · [house book](https://github.com/ElegantVW/scroll)
+- **pixie** — pixie 0.3.19: Auto echo ledger and priority contacts (2026-11-06) · [helper, no cloud](https://github.com/ElegantVW/pixie)
 - **grove** — grove: Request work, no pay buttons, Codex feed that fails loud (2026-10-31) · [the front door](https://github.com/ElegantVW/grove)
 - **magpie** — readme: Look glyph; house GPU off the first screen (2026-10-31) · [sourced manuals](https://github.com/ElegantVW/magpie)
 - **siren** — readme: waves glyph under the title (2026-10-31) · [plays your music](https://github.com/ElegantVW/siren)
-- **pixie** — pixie 0.3.15: Auto hears Message yourself (2026-10-31) · [helper, no cloud](https://github.com/ElegantVW/pixie)
-- **scroll** — chore: add kilo config (2026-10-27) · [house book](https://github.com/ElegantVW/scroll)
 - **faeOS** — crystal: unify WM overlays (picom/fae-wm) under crystal TUI frame (2026-10-27) · [pink house, offline](https://github.com/ElegantVW/faeOS)
 - **kur** — Pond ripple: async speak, listening spinner, one-ripple-at-a-time (2026-10-11) · [haiku only](https://github.com/ElegantVW/kur)
 - **bulwark** — CHANGELOG: release entry (2026-10-11) · [lock and guard](https://github.com/ElegantVW/bulwark)
