@@ -1,5 +1,10 @@
 # Pixie changelog
 
+## v0.3.19 no echo loop + priority contacts (2026-11-06)
+
+- Auto stamps every send (echo ledger + MsgID) and skips FromMe that match a house template or a recent echo, so Message yourself cannot eat its own tail. `pixie --wa-self -- <text>` is the stamped Korda door. Menu tokens (`1`/`2`/`3`/…) are not enqueued as Korda body.
+- Options **Auto** plus one row per local **priority contact** (`~/.config/pixie/auto-contacts.toml`, 0600). `kind = shop` keeps the numbered Bay router. `kind = chat` is isolated 8B plus optional persona overlay. No live names in the crate. Each chat keeps its own session jsonl.
+
 ## v0.3.18 Gil house remote (2026-11-06)
 
 - Message yourself is Gil's menu: **1 Casa** (status / bay / radio, no model), **2 Pixie** (8B who knows this is Gil), **3 Korda** (this Grok TUI if the session presence file is fresh, else the jsonl queue).
