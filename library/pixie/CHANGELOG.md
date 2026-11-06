@@ -1,5 +1,10 @@
 # Pixie changelog
 
+## v0.3.18 Gil house remote (2026-11-06)
+
+- Message yourself is Gil's menu: **1 Casa** (status / bay / radio, no model), **2 Pixie** (8B who knows this is Gil), **3 Korda** (this Grok TUI if the session presence file is fresh, else the jsonl queue).
+- Self-chat no longer uses the away prompt (“Gil cannot reach WhatsApp”). Lookup-shaped texts still hit Bay. Rodas menu unchanged.
+
 ## v0.3.17 Auto / Rodas / Carreira (2026-11-05)
 
 - Options is three switches: **Auto** (everyone else, Qwen3-0.6B CPU ctx 32768 on `:8085`, no tools), **shop** (1 Pixie / 2 Bay / 3 Grok), **Carreira** (8B, no tools, isolated memory). FromMe to other people stays skipped.
