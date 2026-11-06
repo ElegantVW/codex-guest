@@ -1,5 +1,11 @@
 # Pixie changelog
 
+## v0.3.17 Auto / Rodas / Carreira (2026-11-05)
+
+- Options is three switches: **Auto** (everyone else, Qwen3-0.6B CPU ctx 32768 on `:8085`, no tools), **shop** (1 Pixie / 2 Bay / 3 Grok), **Carreira** (8B, no tools, isolated memory). FromMe to other people stays skipped.
+- Message yourself is a house remote while the unit runs: same 1 / 2 / 3, lookup-shaped texts hit Bay. Route 3 `from: self` in the Korda inbox.
+- Auto generic does not steal the GPU from the 8B.
+
 ## v0.3.16 dual Auto + Bay (2026-11-05)
 
 - Options splits Auto into **Carreira** and a shop row (label from `~/.config/pixie/auto-contacts.toml`, mode 0600). Either flag starts `pixie-auto.service`. Other DMs stay silent.
