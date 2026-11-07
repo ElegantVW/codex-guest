@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated": "2026-11-07T12:25:59Z",
-  "pack_sha": "a7e2be31039d3fab08b4c04872f24fdf26b007d77ebe07dc4fee561fcd751010",
+  "generated": "2026-11-07T12:50:19Z",
+  "pack_sha": "a44223dcc764b5c1d3a48ba6d6f1c9890cff241aef32f6903386163897afd468",
   "creatures": [
     {
       "name": "kindling",
@@ -23,9 +23,9 @@
       "name": "pixie",
       "blurb": "helper, no cloud",
       "url": "https://github.com/ElegantVW/pixie",
-      "commit": "pixie 0.3.19: Auto echo ledger and priority contacts",
-      "date": "2026-11-06T02:59:57Z",
-      "sha": "9cea289"
+      "commit": "pixie 0.3.20: cite-audit and Crossref papers",
+      "date": "2026-11-07T12:27:46Z",
+      "sha": "ea77b01"
     },
     {
       "name": "magpie",

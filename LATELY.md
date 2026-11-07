@@ -6,8 +6,8 @@ RSS: https://raw.githubusercontent.com/ElegantVW/codex-guest/main/feed.xml
 
 Codex is a studio window: download the exe. Now / Lately / Next. RSS if you only want headlines.
 
+- **pixie** — pixie 0.3.20: cite-audit and Crossref papers (2026-11-07) · [helper, no cloud](https://github.com/ElegantVW/pixie)
 - **scroll** — pixie lesson: Options Auto covers WhatsApp (2026-11-06) · [house book](https://github.com/ElegantVW/scroll)
-- **pixie** — pixie 0.3.19: Auto echo ledger and priority contacts (2026-11-06) · [helper, no cloud](https://github.com/ElegantVW/pixie)
 - **grove** — grove: Request work, no pay buttons, Codex feed that fails loud (2026-10-31) · [the front door](https://github.com/ElegantVW/grove)
 - **magpie** — readme: Look glyph; house GPU off the first screen (2026-10-31) · [sourced manuals](https://github.com/ElegantVW/magpie)
 - **siren** — readme: waves glyph under the title (2026-10-31) · [plays your music](https://github.com/ElegantVW/siren)
