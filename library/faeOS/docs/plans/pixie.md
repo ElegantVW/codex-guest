@@ -2,7 +2,7 @@
 
 **Role:** Local AI familiar with tools (files, shell, house spells), fully offline. `pixie` / `pixie "…"`; llama-server on `127.0.0.1:8080` via `menagerie`.
 
-**Status:** Rust engine (v0.3.19). Canonical living plan: `~/pixie/docs/pixie.md`. Python `bin/pixie` retired. Menagerie / ask / imp stay Python in this pass.
+**Status:** Rust engine (v0.3.20). Canonical living plan: `~/pixie/docs/pixie.md`. Python `bin/pixie` retired. Menagerie / ask / imp stay Python in this pass.
 
 ## Current
 
@@ -18,7 +18,7 @@
 - Host card every turn (`/etc/os-release`, package manager). House pack in `config/pixie/context/`.
 - Barge-in: type + Enter aborts the in-flight reply. `v` verbose (think + tools). Quiet hides `<think>` but jsonl stores it.
 - `look` hops to a local vision mouth (one GPU tenant). Missing mmproj keeps the eye asleep.
-- Options **Auto** plus local priority rows (`pixie --auto`) cover WhatsApp while the TUI is gone. Auto is everyone else (0.6B CPU). Shop-kind lookup-shaped texts hit `keep-bay`. Message yourself is Casa / Pixie / Korda. Echo ledger stops FromMe loops. `pixie --self-test` proves the filter with no WhatsApp.
+- Options **Auto** plus local priority rows (`pixie --auto`) cover WhatsApp while the TUI is gone. Auto is everyone else (0.6B CPU). Shop-kind lookup-shaped texts hit `keep-bay`. Message yourself is Casa / Pixie / Korda. Echo ledger stops FromMe loops. Deep uses Crossref `papers` / `doi_lookup`; a Rust cite-audit strips unsourced DOIs. `pixie --self-test` proves the filter with no WhatsApp.
 - `menagerie ensure pixie` on demand. Quit keeps the server warm unless `PIXIE_STOP_LLM_ON_EXIT=1`.
 
 ## Files
