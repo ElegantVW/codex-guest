@@ -1,5 +1,13 @@
 # Pixie changelog
 
+## v0.3.21 research hop (2026-11-07)
+
+- `curl_get` forces IPv4 (`-4`) so Wikimedia/DDG AAAA does not stall on a ULA-only hop.
+- `fetch_web_page` treats Magpie dump **errors** as miss (exit ≠ 0 or “fetch failed” text) and falls through to curl. Magpie stderr is no longer shown as the page.
+- DDG parser strips `&rut=` / utm trackers (including the glued `/&rut=` form) and drops duplicate URLs.
+- Deep prompt: product/manual → wiki then `web_research` then fetch. `papers` only for scholarly asks. Do not invent kW or price when a fetch errors.
+- WhatsApp QR / VIP editor still later.
+
 ## v0.3.20 research cite-audit (2026-11-07)
 
 - Deep stays. New programmed tools: `papers` (Crossref) and `doi_lookup`. `fetch_web_page` falls back to curl if Magpie dump is empty.

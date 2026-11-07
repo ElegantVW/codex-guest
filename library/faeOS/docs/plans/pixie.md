@@ -2,7 +2,7 @@
 
 **Role:** Local AI familiar with tools (files, shell, house spells), fully offline. `pixie` / `pixie "…"`; llama-server on `127.0.0.1:8080` via `menagerie`.
 
-**Status:** Rust engine (v0.3.20). Canonical living plan: `~/pixie/docs/pixie.md`. Python `bin/pixie` retired. Menagerie / ask / imp stay Python in this pass.
+**Status:** Rust engine (v0.3.21). Canonical living plan: `~/pixie/docs/pixie.md`. Python `bin/pixie` retired. Menagerie / ask / imp stay Python in this pass.
 
 ## Current
 
@@ -10,7 +10,7 @@
 - Model: Huihui Qwen3-8B abliterated v2 Q4_K_M on this box (menagerie). Live mouth GPU ctx **16384**.
 - Bare `pixie` opens the dashboard (named threads, New, Options). `--new` / `--resume` skip it. Esc empty returns home. Runes **Tab / Shift-Tab** (Ctrl-R alias):
   - **Chat** — house, remember, search_house, wiki, list_dir, grep_files (own walk, no rg), bash (confirm), files, systemd, mail. **No Magpie search** (GPU + time).
-  - **Deep** — light DDG HTML `web_research`, `fetch_web_page` (`magpie browse --dump`), wiki, search_house, list_dir, grep_files. Never `menagerie ensure magpie`.
+  - **Deep** — product: wiki then `web_research` then fetch (Magpie success or curl IPv4). Scholarly: `papers` / `doi_lookup`. Never `menagerie ensure magpie`.
   - **Build** — list_dir/grep_files/read, `edit_local_file` (one replace), `write_local_file`, search_house.
   - **Plan** — read-only bash allowlist + list_dir/grep_files + `write_plan`. Wiki, no Magpie.
 - You/Pixie sit in content-sized bubbles (right blush / left pink). House star splash on launch; wait spinner is the star’s own rows (`*` `\|/` `---*---` `/|\`). Prompt grows with wrap (same wrap for height, paint, and cursor).
